@@ -17,6 +17,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Variables;
+using static System.Net.WebRequestMethods;
 
 namespace Variables
 {
@@ -33,7 +34,7 @@ namespace Variables
         public class getVariables
         {
             //string path = Environment.CurrentDirectory;
-            readonly string path = @"D:\PROJECTS\Kompas C#\Variables";
+            readonly string path = @"E:\GIT\Variables";
 
             public void variables(string detailPath)
             {
@@ -95,6 +96,64 @@ namespace Variables
 
             Upor upor = new Upor();
             upor.editUpor(transfer, a);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sborka_Click(object sender, EventArgs e)
+        {
+            getVariables getVariables = new getVariables();
+            getVariables.variables(@"\Швеллер\Балка ярмовая нижняя.a3d");
+
+
+
+            string progId = "KOMPAS.Application.5";
+            KompasObject kompas = (KompasObject)Marshal.GetActiveObject(progId);
+            _Application My7Komp = (_Application)kompas.ksGetApplication7();
+
+            ksDocument3D iDocument3D = kompas.ActiveDocument3D();
+            ksMateConstraintCollection ksMateConstraintCollection = iDocument3D.MateConstraintCollection();
+
+            int countMate = ksMateConstraintCollection.GetCount();
+            Console.WriteLine($"Количество сопряжений главной сборки:\t\t {countMate} ");
+
+            ksPartCollection PartCollection5 = iDocument3D.PartCollection(true);
+
+            //Индекс искомой детали
+            int indexPart = 2;
+
+            ksPart partik2 = PartCollection5.GetByIndex(indexPart);
+
+            dynamic ksMateConstraintsMassiv;
+
+            ksMateConstraintCollection.GetSafeArrayByObj(partik2, out ksMateConstraintsMassiv);
+
+            object[] sds = ksMateConstraintsMassiv;
+
+            Console.WriteLine($"Количество сопряжений {indexPart}-й детали:\t\t {sds.Count()} ");
+
+            for (int i = 0; i < sds.Count(); i++)
+            {
+                ksMateConstraint ksMateConstraint = sds[i] as ksMateConstraint;
+                Console.WriteLine($"Тип сопряжения:\t\t {ksMateConstraint.constraintType} ");
+            }
+
+            IMateConstraint3D transKompas = kompas.TransferInterface(iDocument3D, 2, 0);
+            IFeature7 ife = IKompasDocument3D.IFeature7(IMateConstraint3D);
+
+
+            IMateConstraint3D = kompas.TransferInterface(ksMateConstraint, 2, 0);
+            IFeature7 ife = ipar.IFeature7(IMateConstraint3D);
+            IVariable7 = iFeature7.Variable(false, false, "L1");
+            IVariable7.Expression = 'a';
+            iDocument3D.RebuildDocument();
+
+
+            //Upor upor = new Upor();
+            //upor.editUpor(transfer, a);
         }
     }
 }
