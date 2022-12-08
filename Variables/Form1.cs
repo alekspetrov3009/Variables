@@ -9,59 +9,93 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
+using System.IO.Ports;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Variables;
 
 namespace Variables
 {
     public partial class Form1 : Form
     {
+        public static ksPart transfer;
+        public static VariableCollection a;
 
         public Form1()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public class getVariables
         {
-            string progId = "KOMPAS.Application.5";
-            KompasObject kompas = (KompasObject)Marshal.GetActiveObject(progId);
-            _Application My7Komp = (_Application)kompas.ksGetApplication7();
+            //string path = Environment.CurrentDirectory;
+            readonly string path = @"D:\PROJECTS\Kompas C#\Variables";
 
-            //Пропустить сообщения
-            My7Komp.HideMessage = ksHideMessageEnum.ksHideMessageNo;
+            public void variables(string detailPath)
+            {
+                Form1 form1 = new Form1();
+                string progId = "KOMPAS.Application.5";
+                KompasObject kompas = (KompasObject)Marshal.GetActiveObject(progId);
+                _Application My7Komp = (_Application)kompas.ksGetApplication7();
 
-            IKompasDocument3D docOpen = (IKompasDocument3D)My7Komp.Documents.Open(@"D:\PROJECTS\Kompas C#\Variables\Швеллер\Сборка.a3d", true, true);
+                //Пропустить сообщения
+                My7Komp.HideMessage = ksHideMessageEnum.ksHideMessageNo;
 
-            IPart7 part7 = docOpen.TopPart;
+                //IKompasDocument3D docOpen = (IKompasDocument3D)My7Komp.Documents.Open(@"D:\PROJECTS\Kompas C#\Variables\Швеллер\Швеллер.m3d", true, true);
+                IKompasDocument3D docOpen = (IKompasDocument3D)My7Komp.Documents.Open($@"{path}{detailPath}", true, true);
 
-            ksPart transfer = kompas.TransferInterface(part7, 1, 0);
+                IPart7 part7 = docOpen.TopPart;
 
-            //Получаем коллекцию внешних переменных
-            VariableCollection a = transfer.VariableCollection();
+                transfer = kompas.TransferInterface(part7, 1, 0);
 
-            //обновляем коллекцию внешних переменных
-            a.refresh();
+                //Получаем коллекцию внешних переменных
+                a = transfer.VariableCollection();
 
-            ksVariable tolschinaShvellera = a.GetByName("SM_Thickness", true, true);
-            ksVariable dlinaShvellera = a.GetByName("Dlina_shvellera", true, true);
-            ksVariable dlinaVerhPolki = a.GetByName("Dlina_Verh_Polki", true, true);
-            ksVariable dlinaNizhPolki = a.GetByName("Dlina_Nizh_Polki", true, true);
-            ksVariable radiusVerhPolki = a.GetByName("Radius_Verh_Polki", true, true);
-            ksVariable radiusNizhPolki = a.GetByName("Radius_Nizh_Polki", true, true);
+                //обновляем коллекцию внешних переменных
+                a.refresh();
+            }
+        }
 
-            tolschinaShvellera.value = 12;
-            dlinaShvellera.value = 1040;
-            dlinaVerhPolki.value = 200;
-            dlinaNizhPolki.value= 200;
-            radiusVerhPolki.value = 15;
-            radiusNizhPolki.value = 15;
 
-            transfer.RebuildModel();
-            Console.WriteLine(a.ToString());
+        public void rebuildShveller_Click(object sender, EventArgs e)
+        {
+            getVariables getVariables = new getVariables();
+            getVariables.variables(@"\Швеллер\Швеллер.m3d");
+
+            Shveller shveller = new Shveller();
+            shveller.editShveller(transfer, a);
+        }
+
+        private void rebuildRebroPodObmotki_Click(object sender, EventArgs e)
+        {
+            getVariables getVariables = new getVariables();
+            getVariables.variables(@"\Швеллер\Ребро 2.m3d");
+
+            RebroPodObmotki rebroPodObmotki = new RebroPodObmotki();
+            rebroPodObmotki.editRebroPodObmotki(transfer, a);
+        }
+
+        private void rebuildKosinka_Click(object sender, EventArgs e)
+        {
+            getVariables getVariables = new getVariables();
+            getVariables.variables(@"\Швеллер\Ребро.m3d");
+
+            Kosinka kosinka = new Kosinka();
+            kosinka.editKosinka(transfer, a);
+        }
+
+        private void rebuildUpor_Click(object sender, EventArgs e)
+        {
+            getVariables getVariables = new getVariables();
+            getVariables.variables(@"\Швеллер\Упор.m3d");
+
+            Upor upor = new Upor();
+            upor.editUpor(transfer, a);
         }
     }
 }
+
