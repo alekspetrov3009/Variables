@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.IO.Ports;
 using System.Linq;
@@ -25,12 +26,6 @@ namespace Variables
     {
         public static ksPart transfer;
         public static VariableCollection a;
-        public int boolOB;
-        public int boolSO;
-        public int boolOPM;
-        public int boolOl;
-
-
 
         public Form1()
         {
@@ -74,7 +69,35 @@ namespace Variables
             getVariables.variables(@"\Швеллер\Швеллер.m3d");
             
             Shveller shveller = new Shveller();
-            shveller.editShveller(transfer, a, boolOB, boolSO, boolOPM, boolOl);
+
+            if (OtverstiyaPodPolubandazh.Checked == true)
+            {
+                Shveller.vOB = Convert.ToDouble(textBox1.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+                Shveller.dOB = Convert.ToDouble(textBox2.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+                Shveller.hOB = Convert.ToDouble(textBox3.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+                Shveller.radiusSOB = Convert.ToDouble(textBox4.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            }
+            
+            if (SmotovieOtverstiya.Checked == true)
+            {
+                Shveller.diamSO = Convert.ToDouble(textBox5.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            }
+
+            if (OtverstiyaPodMost.Checked == true)
+            {
+                Shveller.moOPM = Convert.ToDouble(textBox6.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+                Shveller.diamOPM = Convert.ToDouble(textBox7.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            }
+
+            if (OtverstiyaPodLapi.Checked == true)
+            {
+                Shveller.diamOL = Convert.ToDouble(textBox8.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+                Shveller.moOL = Convert.ToDouble(textBox9.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+                Shveller.polkaLapa = Convert.ToDouble(textBox10.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+
+            }
+
+            shveller.editShveller(transfer, a);
         }
 
         private void rebuildRebroPodObmotki_Click(object sender, EventArgs e)
@@ -121,47 +144,62 @@ namespace Variables
         private void OtverstiyaPodPolubandazh_CheckedChanged(object sender, EventArgs e)
         {
             textBox1.ReadOnly = true;
+            textBox2.ReadOnly = true;
+            textBox3.ReadOnly = true;
+            textBox4.ReadOnly = true;
 
             if (OtverstiyaPodPolubandazh.Checked == true)
             {
-                boolOB = 1;
+                Shveller.boolOB = 1;
                 textBox1.ReadOnly = false;
+                textBox2.ReadOnly = false;
+                textBox3.ReadOnly = false;
+                textBox4.ReadOnly = false;
             }
-            else 
-                boolOB = 0;
-
-            
-
-            //double v = (double)numericUpDown1.Value;
-            //Console.WriteLine(v);
-
+            else
+                Shveller.boolOB = 0;
         }
 
         private void SmotrovieOtverstiya_CheckedChanged(object sender, EventArgs e)
         {
+            textBox5.ReadOnly = true;
+
             if (SmotovieOtverstiya.Checked == true)
             {
-                boolSO = 1;
+                Shveller.boolSO = 1;
+                textBox5.ReadOnly = false;
             }
-            else boolSO= 0;
+            else Shveller.boolSO = 0;
         }
 
         private void OtverstiyaPodMost_CheckedChanged(object sender, EventArgs e)
         {
+            textBox6.ReadOnly = true;
+            textBox7.ReadOnly = true;
+
             if (OtverstiyaPodMost.Checked == true)
             {
-                boolOPM = 1;
+                Shveller.boolOPM = 1;
+                textBox6.ReadOnly = false;
+                textBox7.ReadOnly = false;
             }
-            else boolOPM = 0;
+            else Shveller.boolOPM = 0;
         }
 
         private void OtverstiyaPodLapi_CheckedChanged(object sender, EventArgs e)
         {
+            textBox8.ReadOnly = true;
+            textBox9.ReadOnly = true;
+            textBox10.ReadOnly = true;
+
             if (OtverstiyaPodLapi.Checked == true)
             {
-                boolOl = 1;
+                Shveller.boolOl = 1;
+                textBox8.ReadOnly = false;
+                textBox9.ReadOnly = false;
+                textBox10.ReadOnly = false;
             }
-            else boolOl = 0;
+            else Shveller.boolOl = 0;
         }
 
    

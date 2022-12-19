@@ -6,15 +6,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-//using ;
 namespace Variables
 {
     public class Shveller : Form
     {
-        Form1 Form1 = new Form1();
-        public void editShveller(ksPart transfer, VariableCollection a, int boolOB, int boolSO, int boolOPM, int boolOL)
+        public static double vOB;
+        public static double dOB;
+        public static double hOB;
+        public static double radiusSOB;
+        public static double diamSO;
+        public static double moOPM;
+        public static double diamOPM;
+        public static double diamOL;
+        public static double moOL;
+        public static double polkaLapa;
+
+        public static int boolOB;
+        public static int boolSO;
+        public static int boolOPM;
+        public static int boolOl;
+
+
+        //Form1 Form1 = new Form1();
+        public void editShveller(ksPart transfer, VariableCollection a)
         {
             ksVariable tolschinaShvellera = a.GetByName("SM_Thickness", true, true);
             ksVariable dlinaShvellera = a.GetByName("Dlina_shvellera", true, true);
@@ -38,8 +53,7 @@ namespace Variables
             ksVariable boolOtvPodMost = a.GetByName("boolOtvPodMost", true, true);
             ksVariable boolOtvLapa = a.GetByName("boolOtvLapa", true, true);
 
-             
-            //Form1.textBox1.Text = double.Parse(Form1.textBox1.Text);
+
 
             tolschinaShvellera.value = 12;              /* Толщина швеллера */
             dlinaShvellera.value = 1800;                /* Длина швеллера */
@@ -49,33 +63,28 @@ namespace Variables
             radiusNizhPolki.value = 15;                 /* Радиус скругления нижней полки */
             MO.value = 890;                             /* Межосевое расстояние */
 
-            //visotaOknaBandazha.value = 100;              /* Высота окна под полубандаж */
-            //double v = (double)Form1.numericUpDown1.Value;
-            //Console.WriteLine(v);
+            visotaOknaBandazha.value = vOB;                     /* Высота окна под полубандаж */
+            dlinaOknaBandazha.value = dOB;                       /* Длина окна под полубандаж */
+            glubinaOknaBandazha.value = hOB;                    /* Глубина выреза окна под полубандаж */
+            radiusSkrugleniyaOkonBandazha.value = radiusSOB;    /* Радиус скругления окна под полубандаж */
 
-            //string v = Form1.textBox1.Text;
+            diamSmotrOtv.value = diamSO;                        /* Диаметр смотрового отверстия */
 
-            //Console.WriteLine(v);
+            moOtvPodMost.value = moOPM;                           /* Межосевое расстояние отверстий под мосты */
+            diamOtvPodMost.value = diamOPM;                          /* Диаметр отверстия под мост */
 
-            visotaOknaBandazha.value = 50;             /* Высота окна под полубандаж */
-            dlinaOknaBandazha.value = 60;               /* Длина окна под полубандаж */
-            glubinaOknaBandazha.value = 50;             /* Глубина выреза окна под полубандаж */
-            radiusSkrugleniyaOkonBandazha.value = 5;    /* Радиус скругления окна под полубандаж */
-            diamSmotrOtv.value = 20;                    /* Диаметр смотрового отверстия */
-            moOtvPodMost.value = 500;                   /* Межосевое расстояние отверстий под мосты */
-            diamOtvPodMost.value = 10;                  /* Диаметр отверстия под мост */
-            diamOtvLapa.value = 20;                     /* Диаметр отверстия под лапу */
-            moOtvLapa.value = 100;                      /* Межосевое расстояние отверстий под лапы */
-            rasstPolkaLapa.value = 50;                  /* Расстояние от отверстия под лапы до задней стенки */
-         
-            boolOknaBandazha.value = boolOB ;           /* Наличие окон под полубандаж */
-            boolSmotrOtv.value = boolSO;                /* Наличие смотровых отверстий */
-            boolOtvPodMost.value = boolOPM;             /* Наличие отверстий под мосты */
-            boolOtvLapa.value = boolOL;                 /* Наличие отверстий под лапы */
+            diamOtvLapa.value = diamOL;                             /* Диаметр отверстия под лапу */
+            moOtvLapa.value = moOL;                              /* Межосевое расстояние отверстий под лапы */
+            rasstPolkaLapa.value = polkaLapa;                          /* Расстояние от отверстия под лапы до задней стенки */
+
+            boolOknaBandazha.value = boolOB;                   /* Наличие окон под полубандаж */
+            boolSmotrOtv.value = boolSO;                        /* Наличие смотровых отверстий */
+            boolOtvPodMost.value = boolOPM;                     /* Наличие отверстий под мосты */
+            boolOtvLapa.value = boolOl;                         /* Наличие отверстий под лапы */
 
 
             transfer.RebuildModel();
-            
+
         }
     }
 }
