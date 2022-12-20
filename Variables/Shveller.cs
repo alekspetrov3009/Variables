@@ -11,13 +11,23 @@ namespace Variables
 {
     public class Shveller : Form
     {
+        public static double tolSchv;
+        public static double dlSchv;
+        public static double shirPolki;
+        public static double radiusSkrugl;
+        public static double mezhOsev;
+
+
         public static double vOB;
         public static double dOB;
         public static double hOB;
         public static double radiusSOB;
+
         public static double diamSO;
+
         public static double moOPM;
         public static double diamOPM;
+
         public static double diamOL;
         public static double moOL;
         public static double polkaLapa;
@@ -55,32 +65,32 @@ namespace Variables
 
 
 
-            tolschinaShvellera.value = 12;              /* Толщина швеллера */
-            dlinaShvellera.value = 1800;                /* Длина швеллера */
-            shirinaVerhPolki.value = 200;               /* Ширина верхней полки */
-            shirinaNizhPolki.value = 200;               /* Ширина нижней полки */
-            radiusVerhPolki.value = 15;                 /* Радиус скругления верхней полки */
-            radiusNizhPolki.value = 15;                 /* Радиус скругления нижней полки */
-            MO.value = 890;                             /* Межосевое расстояние */
+            tolschinaShvellera.value = tolSchv;                     /* Толщина швеллера */
+            dlinaShvellera.value = dlSchv;                          /* Длина швеллера */
+            shirinaVerhPolki.value = shirPolki;                     /* Ширина верхней полки */
+            shirinaNizhPolki.value = shirPolki;                     /* Ширина нижней полки */
+            radiusVerhPolki.value = radiusSkrugl;                   /* Радиус скругления верхней полки */
+            radiusNizhPolki.value = radiusSkrugl;                   /* Радиус скругления нижней полки */
+            MO.value = mezhOsev;                                    /* Межосевое расстояние */
 
-            visotaOknaBandazha.value = vOB;                     /* Высота окна под полубандаж */
-            dlinaOknaBandazha.value = dOB;                       /* Длина окна под полубандаж */
-            glubinaOknaBandazha.value = hOB;                    /* Глубина выреза окна под полубандаж */
-            radiusSkrugleniyaOkonBandazha.value = radiusSOB;    /* Радиус скругления окна под полубандаж */
+            visotaOknaBandazha.value = vOB;                         /* Высота окна под полубандаж */
+            dlinaOknaBandazha.value = dOB;                          /* Длина окна под полубандаж */
+            glubinaOknaBandazha.value = hOB;                        /* Глубина выреза окна под полубандаж */
+            radiusSkrugleniyaOkonBandazha.value = radiusSOB;        /* Радиус скругления окна под полубандаж */
 
-            diamSmotrOtv.value = diamSO;                        /* Диаметр смотрового отверстия */
+            diamSmotrOtv.value = diamSO;                            /* Диаметр смотрового отверстия */
 
-            moOtvPodMost.value = moOPM;                           /* Межосевое расстояние отверстий под мосты */
-            diamOtvPodMost.value = diamOPM;                          /* Диаметр отверстия под мост */
+            moOtvPodMost.value = moOPM;                             /* Межосевое расстояние отверстий под мосты */
+            diamOtvPodMost.value = diamOPM;                         /* Диаметр отверстия под мост */
 
             diamOtvLapa.value = diamOL;                             /* Диаметр отверстия под лапу */
-            moOtvLapa.value = moOL;                              /* Межосевое расстояние отверстий под лапы */
-            rasstPolkaLapa.value = polkaLapa;                          /* Расстояние от отверстия под лапы до задней стенки */
+            moOtvLapa.value = moOL;                                 /* Межосевое расстояние отверстий под лапы */
+            rasstPolkaLapa.value = polkaLapa;                       /* Расстояние от отверстия под лапы до задней стенки */
 
-            boolOknaBandazha.value = boolOB;                   /* Наличие окон под полубандаж */
-            boolSmotrOtv.value = boolSO;                        /* Наличие смотровых отверстий */
-            boolOtvPodMost.value = boolOPM;                     /* Наличие отверстий под мосты */
-            boolOtvLapa.value = boolOl;                         /* Наличие отверстий под лапы */
+            boolOknaBandazha.value = boolOB;                        /* Наличие окон под полубандаж */
+            boolSmotrOtv.value = boolSO;                            /* Наличие смотровых отверстий */
+            boolOtvPodMost.value = boolOPM;                         /* Наличие отверстий под мосты */
+            boolOtvLapa.value = boolOl;                             /* Наличие отверстий под лапы */
 
 
             transfer.RebuildModel();

@@ -67,8 +67,15 @@ namespace Variables
         {
             getVariables getVariables = new getVariables();
             getVariables.variables(@"\Швеллер\Швеллер.m3d");
-            
+
             Shveller shveller = new Shveller();
+
+            Shveller.tolSchv = Convert.ToDouble(textBox11.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            Shveller.dlSchv = Convert.ToDouble(textBox12.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            Shveller.shirPolki = Convert.ToDouble(textBox13.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            Shveller.radiusSkrugl = Convert.ToDouble(textBox14.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            Shveller.mezhOsev = Convert.ToDouble(textBox15.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+
 
             if (OtverstiyaPodPolubandazh.Checked == true)
             {
@@ -77,7 +84,7 @@ namespace Variables
                 Shveller.hOB = Convert.ToDouble(textBox3.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
                 Shveller.radiusSOB = Convert.ToDouble(textBox4.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
             }
-            
+
             if (SmotovieOtverstiya.Checked == true)
             {
                 Shveller.diamSO = Convert.ToDouble(textBox5.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
@@ -100,37 +107,11 @@ namespace Variables
             shveller.editShveller(transfer, a);
         }
 
-        private void rebuildRebroPodObmotki_Click(object sender, EventArgs e)
-        {
-            getVariables getVariables = new getVariables();
-            getVariables.variables(@"\Швеллер\Ребро 2.m3d");
 
-            RebroPodObmotki rebroPodObmotki = new RebroPodObmotki();
-            rebroPodObmotki.editRebroPodObmotki(transfer, a);
-        }
+        
 
-        private void rebuildKosinka_Click(object sender, EventArgs e)
-        {
-            getVariables getVariables = new getVariables();
-            getVariables.variables(@"\Швеллер\Ребро.m3d");
+       
 
-            Kosinka kosinka = new Kosinka();
-            kosinka.editKosinka(transfer, a);
-        }
-
-        private void rebuildUpor_Click(object sender, EventArgs e)
-        {
-            getVariables getVariables = new getVariables();
-            getVariables.variables(@"\Швеллер\Упор.m3d");
-
-            Upor upor = new Upor();
-            upor.editUpor(transfer, a);
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void RebuildBalkaYarmNizh_Click(object sender, EventArgs e)
         {
@@ -202,7 +183,60 @@ namespace Variables
             else Shveller.boolOl = 0;
         }
 
-   
+        private void rebuildRebroPodObmotki_Click(object sender, EventArgs e)
+        {
+            getVariables getVariables = new getVariables();
+            getVariables.variables(@"\Швеллер\Ребро 2.m3d");
+
+            RebroPodObmotki rebroPodObmotki = new RebroPodObmotki();
+
+            RebroPodObmotki.hRebra = Convert.ToDouble(textBox16.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            RebroPodObmotki.bRebraVerh = Convert.ToDouble(textBox17.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            RebroPodObmotki.bRebraNiz = Convert.ToDouble(textBox18.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            RebroPodObmotki.hFaski = Convert.ToDouble(textBox19.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            RebroPodObmotki.bFaski = Convert.ToDouble(textBox20.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            RebroPodObmotki.sRebra = Convert.ToDouble(textBox21.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+
+            rebroPodObmotki.editRebroPodObmotki(transfer, a);
+
+        }
+
+        private void rebuildKosinka_Click(object sender, EventArgs e)
+        {
+            getVariables getVariables = new getVariables();
+            getVariables.variables(@"\Швеллер\Ребро.m3d");
+
+            Kosinka kosinka = new Kosinka();
+
+            Kosinka.hRebra = Convert.ToDouble(textBox22.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            Kosinka.bRebraVerh = Convert.ToDouble(textBox23.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            Kosinka.bRebraNiz = Convert.ToDouble(textBox24.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            Kosinka.hFaski = Convert.ToDouble(textBox25.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            Kosinka.bFaski = Convert.ToDouble(textBox26.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            Kosinka.sRebra = Convert.ToDouble(textBox27.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+
+            kosinka.editKosinka(transfer, a);
+        }
+
+        private void rebuidUpor_Click(object sender, EventArgs e)
+        {
+            getVariables getVariables = new getVariables();
+            getVariables.variables(@"\Швеллер\Упор.m3d");
+
+            Upor upor = new Upor();
+
+            Upor.hRebra = Convert.ToDouble(textBox28.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            Upor.bRebra = Convert.ToDouble(textBox29.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            Upor.hFaski = Convert.ToDouble(textBox30.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            Upor.bFaski = Convert.ToDouble(textBox31.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            Upor.hVistupa = Convert.ToDouble(textBox32.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            Upor.vnutrShir = Convert.ToDouble(textBox33.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            Upor.angle = Convert.ToDouble(textBox34.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            Upor.sRebra = Convert.ToDouble(textBox35.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+
+            upor.editUpor(transfer, a);
+        }
+
     }
 }
 

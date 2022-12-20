@@ -4,11 +4,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Variables.Shveller;
 
 namespace Variables
 {
     internal class RebroPodObmotki
     {
+        public static double hRebra;
+        public static double bRebraVerh;
+        public static double bRebraNiz;
+        public static double hFaski;
+        public static double bFaski;
+        public static double sRebra;
 
         public void editRebroPodObmotki(ksPart transfer, VariableCollection a)
         {
@@ -20,12 +27,12 @@ namespace Variables
             ksVariable tolschinaRebra = a.GetByName("tolschinaRebra", true, true);
 
 
-            visotaRebra.value = 200;
-            shirinaRebraVerh.value = 200;
-            shirinaRebraNiz.value = 100;
-            shirinaFaski.value = 20;
-            visotaFaski.value = 15;
-            tolschinaRebra.value = 100;
+            visotaRebra.value = hRebra;                                 /* Высота ребра */
+            shirinaRebraVerh.value = bRebraVerh;                        /* Ширина ребра верхняя */
+            shirinaRebraNiz.value = bRebraNiz;                          /* Ширина ребра нижняя */
+            visotaFaski.value = hFaski;                                 /* Высота фаски */
+            shirinaFaski.value = bFaski;                                /* Ширина фаски */
+            tolschinaRebra.value = sRebra;                              /* Толщина ребра */
 
 
             transfer.RebuildModel();

@@ -9,6 +9,20 @@ namespace Variables
 {
     internal class Upor
     {
+        public static double hRebra;
+        public static double bRebra;
+        
+        public static double hFaski;
+        public static double bFaski;
+
+        public static double hVistupa;
+        public static double vnutrShir;
+
+        public static double angle;
+
+        public static double sRebra;
+
+
         public void editUpor(ksPart transfer, VariableCollection a)
         {
             ksVariable visotaRebra = a.GetByName("visotaRebra", true, true);
@@ -22,14 +36,18 @@ namespace Variables
             ksVariable tolschinaRebra = a.GetByName("tolschinaRebra", true, true);
 
 
-            visotaRebra.value = 500;
-            shirinaRebra.value = 200;
-            shirinaFaski.value = 20;
-            visotaFaski.value = 15;
-            visotaVistupa.value = 10;
-            vnutrShirina.value = 50;
-            ugol.value = 50;
-            tolschinaRebra.value = 100;
+            visotaRebra.value = hRebra;         /* Высота ребра */
+            shirinaRebra.value = bRebra;        /* Ширина ребра */
+
+            visotaFaski.value = hFaski;         /* Высота фаски */
+            shirinaFaski.value = bFaski;        /* Ширина фаски */
+
+            visotaVistupa.value = hVistupa;     /* Высота выступа */
+            vnutrShirina.value = vnutrShir;     /* Внутренняя ширина */
+
+            ugol.value = angle;                 /* Угол */
+
+            tolschinaRebra.value = sRebra;      /* Толщина ребра */
 
 
             transfer.RebuildModel();
