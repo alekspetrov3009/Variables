@@ -32,7 +32,6 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.RebuildBalkaYarmNizh = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.textBox15 = new System.Windows.Forms.TextBox();
@@ -115,17 +114,40 @@
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.rebuidUpor = new System.Windows.Forms.Button();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.textBox45 = new System.Windows.Forms.TextBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.textBox44 = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.textBox36 = new System.Windows.Forms.TextBox();
+            this.textBox37 = new System.Windows.Forms.TextBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.textBox38 = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.textBox39 = new System.Windows.Forms.TextBox();
+            this.textBox40 = new System.Windows.Forms.TextBox();
+            this.textBox41 = new System.Windows.Forms.TextBox();
+            this.textBox42 = new System.Windows.Forms.TextBox();
+            this.textBox43 = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tabControl2.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage6.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl2
@@ -157,6 +179,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage6);
+            this.tabControl1.Controls.Add(this.tabPage9);
             this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.tabControl1.Location = new System.Drawing.Point(5, 5);
@@ -170,7 +193,6 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Controls.Add(this.RebuildBalkaYarmNizh);
             this.tabPage1.Controls.Add(this.label15);
             this.tabPage1.Controls.Add(this.textBox15);
@@ -215,14 +237,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Швеллер";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(552, 158);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(338, 207);
-            this.pictureBox1.TabIndex = 64;
-            this.pictureBox1.TabStop = false;
             // 
             // RebuildBalkaYarmNizh
             // 
@@ -998,8 +1012,39 @@
             this.rebuidUpor.UseVisualStyleBackColor = true;
             this.rebuidUpor.Click += new System.EventHandler(this.rebuidUpor_Click);
             // 
+            // tabPage9
+            // 
+            this.tabPage9.Location = new System.Drawing.Point(4, 29);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Size = new System.Drawing.Size(1096, 851);
+            this.tabPage9.TabIndex = 5;
+            this.tabPage9.Text = "Замковая пластина";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.checkBox1);
+            this.tabPage7.Controls.Add(this.label45);
+            this.tabPage7.Controls.Add(this.textBox45);
+            this.tabPage7.Controls.Add(this.label44);
+            this.tabPage7.Controls.Add(this.textBox44);
+            this.tabPage7.Controls.Add(this.label36);
+            this.tabPage7.Controls.Add(this.textBox36);
+            this.tabPage7.Controls.Add(this.textBox37);
+            this.tabPage7.Controls.Add(this.label37);
+            this.tabPage7.Controls.Add(this.textBox38);
+            this.tabPage7.Controls.Add(this.label38);
+            this.tabPage7.Controls.Add(this.label39);
+            this.tabPage7.Controls.Add(this.textBox39);
+            this.tabPage7.Controls.Add(this.textBox40);
+            this.tabPage7.Controls.Add(this.textBox41);
+            this.tabPage7.Controls.Add(this.textBox42);
+            this.tabPage7.Controls.Add(this.textBox43);
+            this.tabPage7.Controls.Add(this.label40);
+            this.tabPage7.Controls.Add(this.label41);
+            this.tabPage7.Controls.Add(this.label42);
+            this.tabPage7.Controls.Add(this.label43);
+            this.tabPage7.Controls.Add(this.button1);
             this.tabPage7.Location = new System.Drawing.Point(4, 29);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Size = new System.Drawing.Size(1096, 851);
@@ -1007,22 +1052,217 @@
             this.tabPage7.Text = "Сборка";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(23, 202);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(276, 24);
+            this.checkBox1.TabIndex = 124;
+            this.checkBox1.Text = "Отверстия для крепления бруса";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(83, 388);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(155, 20);
+            this.label45.TabIndex = 123;
+            this.label45.Text = "Толщина пластины";
+            // 
+            // textBox45
+            // 
+            this.textBox45.Location = new System.Drawing.Point(22, 381);
+            this.textBox45.Name = "textBox45";
+            this.textBox45.ReadOnly = true;
+            this.textBox45.Size = new System.Drawing.Size(45, 26);
+            this.textBox45.TabIndex = 122;
+            this.textBox45.WordWrap = false;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(83, 356);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(145, 20);
+            this.label44.TabIndex = 121;
+            this.label44.Text = "Ширина пластины";
+            // 
+            // textBox44
+            // 
+            this.textBox44.Location = new System.Drawing.Point(22, 349);
+            this.textBox44.Name = "textBox44";
+            this.textBox44.ReadOnly = true;
+            this.textBox44.Size = new System.Drawing.Size(45, 26);
+            this.textBox44.TabIndex = 120;
+            this.textBox44.WordWrap = false;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(83, 324);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(144, 20);
+            this.label36.TabIndex = 119;
+            this.label36.Text = "Высота пластины";
+            // 
+            // textBox36
+            // 
+            this.textBox36.Location = new System.Drawing.Point(22, 289);
+            this.textBox36.Name = "textBox36";
+            this.textBox36.ReadOnly = true;
+            this.textBox36.Size = new System.Drawing.Size(45, 26);
+            this.textBox36.TabIndex = 118;
+            this.textBox36.WordWrap = false;
+            // 
+            // textBox37
+            // 
+            this.textBox37.Location = new System.Drawing.Point(22, 317);
+            this.textBox37.Name = "textBox37";
+            this.textBox37.ReadOnly = true;
+            this.textBox37.Size = new System.Drawing.Size(45, 26);
+            this.textBox37.TabIndex = 116;
+            this.textBox37.WordWrap = false;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(83, 295);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(284, 20);
+            this.label37.TabIndex = 117;
+            this.label37.Text = "Расстояние между парой отверстий";
+            // 
+            // textBox38
+            // 
+            this.textBox38.Location = new System.Drawing.Point(22, 22);
+            this.textBox38.Name = "textBox38";
+            this.textBox38.Size = new System.Drawing.Size(45, 26);
+            this.textBox38.TabIndex = 114;
+            this.textBox38.WordWrap = false;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(83, 264);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(325, 20);
+            this.label38.TabIndex = 115;
+            this.label38.Text = "Диаметр отверстий под крепление бруса";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(83, 22);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(115, 20);
+            this.label39.TabIndex = 113;
+            this.label39.Text = "Высота ребра";
+            // 
+            // textBox39
+            // 
+            this.textBox39.Location = new System.Drawing.Point(22, 50);
+            this.textBox39.Name = "textBox39";
+            this.textBox39.Size = new System.Drawing.Size(45, 26);
+            this.textBox39.TabIndex = 112;
+            this.textBox39.WordWrap = false;
+            // 
+            // textBox40
+            // 
+            this.textBox40.Location = new System.Drawing.Point(22, 78);
+            this.textBox40.Name = "textBox40";
+            this.textBox40.Size = new System.Drawing.Size(45, 26);
+            this.textBox40.TabIndex = 110;
+            this.textBox40.WordWrap = false;
+            // 
+            // textBox41
+            // 
+            this.textBox41.Location = new System.Drawing.Point(22, 106);
+            this.textBox41.Name = "textBox41";
+            this.textBox41.Size = new System.Drawing.Size(45, 26);
+            this.textBox41.TabIndex = 108;
+            this.textBox41.WordWrap = false;
+            // 
+            // textBox42
+            // 
+            this.textBox42.Location = new System.Drawing.Point(22, 231);
+            this.textBox42.Name = "textBox42";
+            this.textBox42.ReadOnly = true;
+            this.textBox42.Size = new System.Drawing.Size(45, 26);
+            this.textBox42.TabIndex = 106;
+            this.textBox42.WordWrap = false;
+            // 
+            // textBox43
+            // 
+            this.textBox43.Location = new System.Drawing.Point(22, 259);
+            this.textBox43.Name = "textBox43";
+            this.textBox43.ReadOnly = true;
+            this.textBox43.Size = new System.Drawing.Size(45, 26);
+            this.textBox43.TabIndex = 104;
+            this.textBox43.WordWrap = false;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(83, 51);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(220, 20);
+            this.label40.TabIndex = 111;
+            this.label40.Text = "Расстояние между ребрами";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(83, 80);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(237, 20);
+            this.label41.TabIndex = 109;
+            this.label41.Text = "Расстояние между косынками";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(83, 109);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(218, 20);
+            this.label42.TabIndex = 107;
+            this.label42.Text = "Расстояние между упорами";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(83, 235);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(402, 20);
+            this.label43.TabIndex = 105;
+            this.label43.Text = "Межосевое расстояние отверстий под болты бруса";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(491, 33);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(156, 117);
+            this.button1.TabIndex = 103;
+            this.button1.Text = "Балка ярмовая нижняя";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // tabPage5
             // 
-            this.tabPage5.Location = new System.Drawing.Point(4, 25);
+            this.tabPage5.Location = new System.Drawing.Point(4, 29);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1102, 972);
+            this.tabPage5.Size = new System.Drawing.Size(1102, 968);
             this.tabPage5.TabIndex = 1;
             this.tabPage5.Text = "Балка ярмовая верхняя";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // tabPage8
             // 
-            this.tabPage8.Location = new System.Drawing.Point(4, 25);
+            this.tabPage8.Location = new System.Drawing.Point(4, 29);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(1102, 972);
+            this.tabPage8.Size = new System.Drawing.Size(1102, 968);
             this.tabPage8.TabIndex = 2;
             this.tabPage8.Text = "Магнитопровод";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -1041,13 +1281,14 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1122,7 +1363,6 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Button rebuildKosinka;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.Label label34;
@@ -1143,6 +1383,29 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Button rebuidUpor;
         private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.Label label44;
+        public System.Windows.Forms.TextBox textBox44;
+        private System.Windows.Forms.Label label36;
+        public System.Windows.Forms.TextBox textBox36;
+        public System.Windows.Forms.TextBox textBox37;
+        private System.Windows.Forms.Label label37;
+        public System.Windows.Forms.TextBox textBox38;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label39;
+        public System.Windows.Forms.TextBox textBox39;
+        public System.Windows.Forms.TextBox textBox40;
+        public System.Windows.Forms.TextBox textBox41;
+        public System.Windows.Forms.TextBox textBox42;
+        public System.Windows.Forms.TextBox textBox43;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label45;
+        public System.Windows.Forms.TextBox textBox45;
+        private System.Windows.Forms.TabPage tabPage9;
     }
 }
 
