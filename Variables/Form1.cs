@@ -107,20 +107,31 @@ namespace Variables
             shveller.editShveller(transfer, a);
         }
 
-
-        
-
-       
-
-
         private void RebuildBalkaYarmNizh_Click(object sender, EventArgs e)
         {
             getVariables getVariables = new getVariables();
             getVariables.variables(@"\Швеллер\Балка ярмовая нижняя.a3d");
 
             BalkaYarmNizh balkaYarmNizh = new BalkaYarmNizh();
+
+            BalkaYarmNizh.mezhOsev = Convert.ToDouble(textBox36.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            BalkaYarmNizh.L1 = Convert.ToDouble(textBox37.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            BalkaYarmNizh.L2 = Convert.ToDouble(textBox38.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            BalkaYarmNizh.L3 = Convert.ToDouble(textBox39.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            
+            if (OtvDlyaKrepBrusa.Checked== true)
+            {
+                BalkaYarmNizh.L4 = Convert.ToDouble(textBox40.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+                BalkaYarmNizh.diamOtvBrus = Convert.ToDouble(textBox41.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+                BalkaYarmNizh.mezhOsevOtvBrus = Convert.ToDouble(textBox42.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+                BalkaYarmNizh.Bplastini = Convert.ToDouble(textBox43.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+                BalkaYarmNizh.Hplastini = Convert.ToDouble(textBox44.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+                BalkaYarmNizh.Splastini = Convert.ToDouble(textBox45.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            }
+
             balkaYarmNizh.editBalkaYarmNizh(transfer, a);
         }
+
 
         private void OtverstiyaPodPolubandazh_CheckedChanged(object sender, EventArgs e)
         {
@@ -237,6 +248,59 @@ namespace Variables
             upor.editUpor(transfer, a);
         }
 
+        private void OtvDlyaKrepBrusa_CheckedChanged(object sender, EventArgs e)
+        {
+            textBox40.ReadOnly = true;
+            textBox41.ReadOnly = true;
+            textBox42.ReadOnly = true;
+            textBox43.ReadOnly = true;
+            textBox44.ReadOnly = true;
+            textBox45.ReadOnly = true;
+
+
+            if (OtvDlyaKrepBrusa.Checked == true)
+            {
+                BalkaYarmNizh.boolOB = 1;
+                BalkaYarmNizh.boolPOM = 1;
+
+                textBox40.ReadOnly = false;
+                textBox41.ReadOnly = false;
+                textBox42.ReadOnly = false;
+                textBox43.ReadOnly = false;
+                textBox44.ReadOnly = false;
+                textBox45.ReadOnly = false;
+
+            }
+            else 
+                BalkaYarmNizh.boolOB = 0;
+
+        }
+
+        private void PlastinaPodObmotki_CheckedChanged(object sender, EventArgs e)
+        {
+            if (PlastinaPodObmotki.Checked == true) 
+            {
+                BalkaYarmNizh.boolPOM = 1;
+            }
+            else
+                BalkaYarmNizh.boolPOM = 0;
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();
+            form.pictureBox1.Image = pictureBox1.Image;
+            form.ShowDialog();
+        }
+
+
+        private void textBox_MouseClick(object sender, MouseEventArgs e)
+        {
+            textBox11.Clear();
+        }
     }
+   
+   
 }
 
