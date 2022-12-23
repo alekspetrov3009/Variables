@@ -16,5 +16,9 @@ namespace Variables
         {
             InitializeComponent();
         }
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Form2.ActiveForm.Close();
+        }
     }
 }

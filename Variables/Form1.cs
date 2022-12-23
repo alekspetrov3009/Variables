@@ -299,8 +299,62 @@ namespace Variables
         {
             textBox11.Clear();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();
+            form.pictureBox1.Image = pictureBox2.Image;
+            form.ShowDialog();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();
+            form.pictureBox1.Image = pictureBox3.Image;
+            form.ShowDialog();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();
+            form.pictureBox1.Image = pictureBox4.Image;
+            form.ShowDialog();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();
+            form.pictureBox1.Image = pictureBox5.Image;
+            form.ShowDialog();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();
+            form.pictureBox1.Image = pictureBox6.Image;
+            form.ShowDialog();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();
+            form.pictureBox1.Image = pictureBox7.Image;
+            form.ShowDialog();
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();
+            form.pictureBox1.Image = pictureBox8.Image;
+            form.ShowDialog();
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();
+            form.pictureBox1.Image = pictureBox9.Image;
+            form.ShowDialog();
+        }
     }
-   
-   
 }
 
