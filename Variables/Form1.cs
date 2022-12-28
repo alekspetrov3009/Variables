@@ -294,7 +294,6 @@ namespace Variables
             form.ShowDialog();
         }
 
-
         private void textBox_MouseClick(object sender, MouseEventArgs e)
         {
             textBox11.Clear();

@@ -30,12 +30,12 @@
         {
             System.Windows.Forms.GroupBox groupBox8;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Узел3");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Узел0", new System.Windows.Forms.TreeNode[] {
-            treeNode5});
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Узел2");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Узел1", new System.Windows.Forms.TreeNode[] {
-            treeNode7});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Узел3");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Узел0", new System.Windows.Forms.TreeNode[] {
+            treeNode1});
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Узел2");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Узел1", new System.Windows.Forms.TreeNode[] {
+            treeNode3});
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.textBox28 = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
@@ -103,6 +103,29 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.textBox50 = new System.Windows.Forms.TextBox();
+            this.textBox51 = new System.Windows.Forms.TextBox();
+            this.label52 = new System.Windows.Forms.Label();
+            this.textBox52 = new System.Windows.Forms.TextBox();
+            this.textBox53 = new System.Windows.Forms.TextBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.textBox46 = new System.Windows.Forms.TextBox();
+            this.textBox47 = new System.Windows.Forms.TextBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.textBox49 = new System.Windows.Forms.TextBox();
+            this.textBox48 = new System.Windows.Forms.TextBox();
+            this.label49 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.textBox22 = new System.Windows.Forms.TextBox();
@@ -135,7 +158,6 @@
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.textBox19 = new System.Windows.Forms.TextBox();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.PlastinaPodObmotki = new System.Windows.Forms.CheckBox();
             this.OtvDlyaKrepBrusa = new System.Windows.Forms.CheckBox();
@@ -162,18 +184,6 @@
             this.RebuildBalkaYarmNizh = new System.Windows.Forms.Button();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.treeView1 = new System.Windows.Forms.TreeView();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.textBox46 = new System.Windows.Forms.TextBox();
-            this.textBox47 = new System.Windows.Forms.TextBox();
-            this.label48 = new System.Windows.Forms.Label();
-            this.textBox48 = new System.Windows.Forms.TextBox();
-            this.label49 = new System.Windows.Forms.Label();
-            this.textBox49 = new System.Windows.Forms.TextBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
             groupBox8 = new System.Windows.Forms.GroupBox();
             groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -191,13 +201,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.groupBox9.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.tabPage7.SuspendLayout();
             this.tabPage10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox8
@@ -378,10 +390,8 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage9);
             this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Controls.Add(this.tabPage10);
-            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.tabControl1.Location = new System.Drawing.Point(12, 11);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -389,7 +399,7 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1023, 963);
+            this.tabControl1.Size = new System.Drawing.Size(1023, 983);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -405,17 +415,17 @@
             this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage1.Size = new System.Drawing.Size(1015, 930);
+            this.tabPage1.Size = new System.Drawing.Size(1015, 950);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Швеллер";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // rebuildShveller
             // 
-            this.rebuildShveller.Location = new System.Drawing.Point(3, 844);
+            this.rebuildShveller.Location = new System.Drawing.Point(17, 844);
             this.rebuildShveller.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rebuildShveller.Name = "rebuildShveller";
-            this.rebuildShveller.Size = new System.Drawing.Size(372, 82);
+            this.rebuildShveller.Size = new System.Drawing.Size(345, 82);
             this.rebuildShveller.TabIndex = 0;
             this.rebuildShveller.Text = "Швеллер";
             this.rebuildShveller.UseVisualStyleBackColor = true;
@@ -425,7 +435,7 @@
             // 
             this.splitter1.Location = new System.Drawing.Point(3, 2);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(372, 926);
+            this.splitter1.Size = new System.Drawing.Size(372, 946);
             this.splitter1.TabIndex = 69;
             this.splitter1.TabStop = false;
             // 
@@ -900,13 +910,14 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1015, 930);
+            this.tabPage2.Size = new System.Drawing.Size(1015, 950);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Ребро под обмоткой";
+            this.tabPage2.Text = "Ребра";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // groupBox9
             // 
+            this.groupBox9.Controls.Add(this.groupBox10);
             this.groupBox9.Controls.Add(this.checkBox2);
             this.groupBox9.Controls.Add(this.checkBox1);
             this.groupBox9.Controls.Add(this.pictureBox9);
@@ -924,6 +935,225 @@
             this.groupBox9.TabIndex = 104;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Замковая пластина";
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.checkBox3);
+            this.groupBox10.Controls.Add(this.checkBox4);
+            this.groupBox10.Controls.Add(this.pictureBox10);
+            this.groupBox10.Controls.Add(this.label50);
+            this.groupBox10.Controls.Add(this.label51);
+            this.groupBox10.Controls.Add(this.textBox50);
+            this.groupBox10.Controls.Add(this.textBox51);
+            this.groupBox10.Controls.Add(this.label52);
+            this.groupBox10.Controls.Add(this.textBox52);
+            this.groupBox10.Controls.Add(this.textBox53);
+            this.groupBox10.Controls.Add(this.label53);
+            this.groupBox10.Location = new System.Drawing.Point(0, 225);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(575, 225);
+            this.groupBox10.TabIndex = 114;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Замковая пластина";
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(6, 163);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(200, 24);
+            this.checkBox3.TabIndex = 113;
+            this.checkBox3.Text = "Отверстие в пластине";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(6, 25);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(179, 24);
+            this.checkBox4.TabIndex = 112;
+            this.checkBox4.Text = "Замковая пластина";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(437, 55);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(120, 120);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 111;
+            this.pictureBox10.TabStop = false;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(67, 196);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(161, 20);
+            this.label50.TabIndex = 110;
+            this.label50.Text = "Диаметр отверстия";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(67, 55);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(66, 20);
+            this.label51.TabIndex = 104;
+            this.label51.Text = "Высота";
+            // 
+            // textBox50
+            // 
+            this.textBox50.Location = new System.Drawing.Point(6, 55);
+            this.textBox50.Name = "textBox50";
+            this.textBox50.Size = new System.Drawing.Size(45, 26);
+            this.textBox50.TabIndex = 109;
+            this.textBox50.WordWrap = false;
+            // 
+            // textBox51
+            // 
+            this.textBox51.Location = new System.Drawing.Point(6, 83);
+            this.textBox51.Name = "textBox51";
+            this.textBox51.Size = new System.Drawing.Size(45, 26);
+            this.textBox51.TabIndex = 107;
+            this.textBox51.WordWrap = false;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(67, 113);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(77, 20);
+            this.label52.TabIndex = 108;
+            this.label52.Text = "Толщина";
+            // 
+            // textBox52
+            // 
+            this.textBox52.Location = new System.Drawing.Point(6, 193);
+            this.textBox52.Name = "textBox52";
+            this.textBox52.Size = new System.Drawing.Size(45, 26);
+            this.textBox52.TabIndex = 105;
+            this.textBox52.WordWrap = false;
+            // 
+            // textBox53
+            // 
+            this.textBox53.Location = new System.Drawing.Point(6, 111);
+            this.textBox53.Name = "textBox53";
+            this.textBox53.Size = new System.Drawing.Size(45, 26);
+            this.textBox53.TabIndex = 103;
+            this.textBox53.WordWrap = false;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(67, 84);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(67, 20);
+            this.label53.TabIndex = 106;
+            this.label53.Text = "Ширина";
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(6, 163);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(200, 24);
+            this.checkBox2.TabIndex = 113;
+            this.checkBox2.Text = "Отверстие в пластине";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(6, 25);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(179, 24);
+            this.checkBox1.TabIndex = 112;
+            this.checkBox1.Text = "Замковая пластина";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(437, 55);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(120, 120);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox9.TabIndex = 111;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(67, 196);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(161, 20);
+            this.label46.TabIndex = 110;
+            this.label46.Text = "Диаметр отверстия";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(67, 55);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(66, 20);
+            this.label47.TabIndex = 104;
+            this.label47.Text = "Высота";
+            // 
+            // textBox46
+            // 
+            this.textBox46.Location = new System.Drawing.Point(6, 55);
+            this.textBox46.Name = "textBox46";
+            this.textBox46.Size = new System.Drawing.Size(45, 26);
+            this.textBox46.TabIndex = 109;
+            this.textBox46.WordWrap = false;
+            // 
+            // textBox47
+            // 
+            this.textBox47.Location = new System.Drawing.Point(6, 83);
+            this.textBox47.Name = "textBox47";
+            this.textBox47.Size = new System.Drawing.Size(45, 26);
+            this.textBox47.TabIndex = 107;
+            this.textBox47.WordWrap = false;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(67, 113);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(77, 20);
+            this.label48.TabIndex = 108;
+            this.label48.Text = "Толщина";
+            // 
+            // textBox49
+            // 
+            this.textBox49.Location = new System.Drawing.Point(6, 193);
+            this.textBox49.Name = "textBox49";
+            this.textBox49.Size = new System.Drawing.Size(45, 26);
+            this.textBox49.TabIndex = 105;
+            this.textBox49.WordWrap = false;
+            // 
+            // textBox48
+            // 
+            this.textBox48.Location = new System.Drawing.Point(6, 111);
+            this.textBox48.Name = "textBox48";
+            this.textBox48.Size = new System.Drawing.Size(45, 26);
+            this.textBox48.TabIndex = 103;
+            this.textBox48.WordWrap = false;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(67, 84);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(67, 20);
+            this.label49.TabIndex = 106;
+            this.label49.Text = "Ширина";
             // 
             // groupBox7
             // 
@@ -1063,9 +1293,9 @@
             // 
             // rebuildRebroPodObmotki
             // 
-            this.rebuildRebroPodObmotki.Location = new System.Drawing.Point(3, 3);
+            this.rebuildRebroPodObmotki.Location = new System.Drawing.Point(17, 3);
             this.rebuildRebroPodObmotki.Name = "rebuildRebroPodObmotki";
-            this.rebuildRebroPodObmotki.Size = new System.Drawing.Size(372, 82);
+            this.rebuildRebroPodObmotki.Size = new System.Drawing.Size(342, 82);
             this.rebuildRebroPodObmotki.TabIndex = 0;
             this.rebuildRebroPodObmotki.Text = "Ребро";
             this.rebuildRebroPodObmotki.UseVisualStyleBackColor = true;
@@ -1073,9 +1303,9 @@
             // 
             // rebuidUpor
             // 
-            this.rebuidUpor.Location = new System.Drawing.Point(23, 457);
+            this.rebuidUpor.Location = new System.Drawing.Point(17, 457);
             this.rebuidUpor.Name = "rebuidUpor";
-            this.rebuidUpor.Size = new System.Drawing.Size(337, 103);
+            this.rebuidUpor.Size = new System.Drawing.Size(342, 78);
             this.rebuidUpor.TabIndex = 86;
             this.rebuidUpor.Text = "Упор";
             this.rebuidUpor.UseVisualStyleBackColor = true;
@@ -1083,9 +1313,9 @@
             // 
             // rebuildKosinka
             // 
-            this.rebuildKosinka.Location = new System.Drawing.Point(6, 226);
+            this.rebuildKosinka.Location = new System.Drawing.Point(17, 226);
             this.rebuildKosinka.Name = "rebuildKosinka";
-            this.rebuildKosinka.Size = new System.Drawing.Size(369, 81);
+            this.rebuildKosinka.Size = new System.Drawing.Size(342, 81);
             this.rebuildKosinka.TabIndex = 73;
             this.rebuildKosinka.Text = "Косынка";
             this.rebuildKosinka.UseVisualStyleBackColor = true;
@@ -1095,7 +1325,7 @@
             // 
             this.splitter2.Location = new System.Drawing.Point(3, 3);
             this.splitter2.Name = "splitter2";
-            this.splitter2.Size = new System.Drawing.Size(372, 924);
+            this.splitter2.Size = new System.Drawing.Size(372, 944);
             this.splitter2.TabIndex = 75;
             this.splitter2.TabStop = false;
             // 
@@ -1125,7 +1355,7 @@
             // 
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(437, 34);
+            this.pictureBox6.Location = new System.Drawing.Point(437, 43);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(120, 120);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1235,15 +1465,6 @@
             this.textBox19.TabIndex = 63;
             this.textBox19.WordWrap = false;
             // 
-            // tabPage9
-            // 
-            this.tabPage9.Location = new System.Drawing.Point(4, 29);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(1015, 930);
-            this.tabPage9.TabIndex = 5;
-            this.tabPage9.Text = "Замковая пластина";
-            this.tabPage9.UseVisualStyleBackColor = true;
-            // 
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.PlastinaPodObmotki);
@@ -1271,7 +1492,7 @@
             this.tabPage7.Controls.Add(this.RebuildBalkaYarmNizh);
             this.tabPage7.Location = new System.Drawing.Point(4, 29);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(1015, 930);
+            this.tabPage7.Size = new System.Drawing.Size(1015, 950);
             this.tabPage7.TabIndex = 4;
             this.tabPage7.Text = "Сборка";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -1490,7 +1711,7 @@
             this.tabPage10.Location = new System.Drawing.Point(4, 29);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(1015, 930);
+            this.tabPage10.Size = new System.Drawing.Size(1015, 950);
             this.tabPage10.TabIndex = 6;
             this.tabPage10.Text = "tabPage10";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -1499,135 +1720,25 @@
             // 
             this.treeView1.Location = new System.Drawing.Point(3, 6);
             this.treeView1.Name = "treeView1";
-            treeNode5.Name = "Узел3";
-            treeNode5.Text = "Узел3";
-            treeNode6.Name = "Узел0";
-            treeNode6.Text = "Узел0";
-            treeNode7.Name = "Узел2";
-            treeNode7.Text = "Узел2";
-            treeNode8.Name = "Узел1";
-            treeNode8.Text = "Узел1";
+            treeNode1.Name = "Узел3";
+            treeNode1.Text = "Узел3";
+            treeNode2.Name = "Узел0";
+            treeNode2.Text = "Узел0";
+            treeNode3.Name = "Узел2";
+            treeNode3.Text = "Узел2";
+            treeNode4.Name = "Узел1";
+            treeNode4.Text = "Узел1";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode6,
-            treeNode8});
+            treeNode2,
+            treeNode4});
             this.treeView1.Size = new System.Drawing.Size(263, 839);
             this.treeView1.TabIndex = 60;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 29);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1015, 930);
-            this.tabPage3.TabIndex = 7;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(67, 196);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(161, 20);
-            this.label46.TabIndex = 110;
-            this.label46.Text = "Диаметр отверстия";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(67, 55);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(66, 20);
-            this.label47.TabIndex = 104;
-            this.label47.Text = "Высота";
-            // 
-            // textBox46
-            // 
-            this.textBox46.Location = new System.Drawing.Point(6, 55);
-            this.textBox46.Name = "textBox46";
-            this.textBox46.Size = new System.Drawing.Size(45, 26);
-            this.textBox46.TabIndex = 109;
-            this.textBox46.WordWrap = false;
-            // 
-            // textBox47
-            // 
-            this.textBox47.Location = new System.Drawing.Point(6, 83);
-            this.textBox47.Name = "textBox47";
-            this.textBox47.Size = new System.Drawing.Size(45, 26);
-            this.textBox47.TabIndex = 107;
-            this.textBox47.WordWrap = false;
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(67, 113);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(77, 20);
-            this.label48.TabIndex = 108;
-            this.label48.Text = "Толщина";
-            // 
-            // textBox48
-            // 
-            this.textBox48.Location = new System.Drawing.Point(6, 111);
-            this.textBox48.Name = "textBox48";
-            this.textBox48.Size = new System.Drawing.Size(45, 26);
-            this.textBox48.TabIndex = 103;
-            this.textBox48.WordWrap = false;
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(67, 84);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(67, 20);
-            this.label49.TabIndex = 106;
-            this.label49.Text = "Ширина";
-            // 
-            // textBox49
-            // 
-            this.textBox49.Location = new System.Drawing.Point(6, 193);
-            this.textBox49.Name = "textBox49";
-            this.textBox49.Size = new System.Drawing.Size(45, 26);
-            this.textBox49.TabIndex = 105;
-            this.textBox49.WordWrap = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(437, 55);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(120, 120);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 111;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 25);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(179, 24);
-            this.checkBox1.TabIndex = 112;
-            this.checkBox1.Text = "Замковая пластина";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(6, 163);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(200, 24);
-            this.checkBox2.TabIndex = 113;
-            this.checkBox2.Text = "Отверстие в пластине";
-            this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1633, 970);
+            this.ClientSize = new System.Drawing.Size(1059, 1074);
             this.Controls.Add(this.tabControl1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
@@ -1656,6 +1767,10 @@
             this.tabPage2.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -1665,7 +1780,6 @@
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
             this.tabPage10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1705,7 +1819,6 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Button rebuidUpor;
-        private System.Windows.Forms.TabPage tabPage9;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.CheckBox PlastinaPodObmotki;
         private System.Windows.Forms.CheckBox OtvDlyaKrepBrusa;
@@ -1797,7 +1910,6 @@
         public System.Windows.Forms.TextBox textBox26;
         private System.Windows.Forms.Button rebuildKosinka;
         public System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
@@ -1810,6 +1922,18 @@
         public System.Windows.Forms.TextBox textBox49;
         public System.Windows.Forms.TextBox textBox48;
         private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox4;
+        public System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label51;
+        public System.Windows.Forms.TextBox textBox50;
+        public System.Windows.Forms.TextBox textBox51;
+        private System.Windows.Forms.Label label52;
+        public System.Windows.Forms.TextBox textBox52;
+        public System.Windows.Forms.TextBox textBox53;
+        private System.Windows.Forms.Label label53;
     }
 }
 
