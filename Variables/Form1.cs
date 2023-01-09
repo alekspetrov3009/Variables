@@ -135,18 +135,12 @@ namespace Variables
 
         private void OtverstiyaPodPolubandazh_CheckedChanged(object sender, EventArgs e)
         {
-            textBox1.ReadOnly = true;
-            textBox2.ReadOnly = true;
-            textBox3.ReadOnly = true;
-            textBox4.ReadOnly = true;
+            groupBox3.Enabled= false;
 
             if (OtverstiyaPodPolubandazh.Checked == true)
             {
                 Shveller.boolOB = 1;
-                textBox1.ReadOnly = false;
-                textBox2.ReadOnly = false;
-                textBox3.ReadOnly = false;
-                textBox4.ReadOnly = false;
+                groupBox3.Enabled = true;
             }
             else
                 Shveller.boolOB = 0;
@@ -154,42 +148,36 @@ namespace Variables
 
         private void SmotrovieOtverstiya_CheckedChanged(object sender, EventArgs e)
         {
-            textBox5.ReadOnly = true;
+            groupBox1.Enabled = false;
 
             if (SmotovieOtverstiya.Checked == true)
             {
                 Shveller.boolSO = 1;
-                textBox5.ReadOnly = false;
+                groupBox1.Enabled = true;
             }
             else Shveller.boolSO = 0;
         }
 
         private void OtverstiyaPodMost_CheckedChanged(object sender, EventArgs e)
         {
-            textBox6.ReadOnly = true;
-            textBox7.ReadOnly = true;
+            groupBox4.Enabled = false;
 
             if (OtverstiyaPodMost.Checked == true)
             {
                 Shveller.boolOPM = 1;
-                textBox6.ReadOnly = false;
-                textBox7.ReadOnly = false;
+                groupBox4.Enabled = true;
             }
             else Shveller.boolOPM = 0;
         }
 
         private void OtverstiyaPodLapi_CheckedChanged(object sender, EventArgs e)
         {
-            textBox8.ReadOnly = true;
-            textBox9.ReadOnly = true;
-            textBox10.ReadOnly = true;
+            groupBox5.Enabled = false;
 
             if (OtverstiyaPodLapi.Checked == true)
             {
                 Shveller.boolOl = 1;
-                textBox8.ReadOnly = false;
-                textBox9.ReadOnly = false;
-                textBox10.ReadOnly = false;
+                groupBox5.Enabled = true;
             }
             else Shveller.boolOl = 0;
         }
@@ -201,12 +189,12 @@ namespace Variables
 
             RebroPodObmotki rebroPodObmotki = new RebroPodObmotki();
 
-            RebroPodObmotki.hRebra = Convert.ToDouble(textBox16.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-            RebroPodObmotki.bRebraVerh = Convert.ToDouble(textBox17.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-            RebroPodObmotki.bRebraNiz = Convert.ToDouble(textBox18.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-            RebroPodObmotki.hFaski = Convert.ToDouble(textBox19.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-            RebroPodObmotki.bFaski = Convert.ToDouble(textBox20.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-            RebroPodObmotki.sRebra = Convert.ToDouble(textBox21.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            Variables.RebroPodObmotki.hRebra = Convert.ToDouble(textBox16.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            Variables.RebroPodObmotki.bRebraVerh = Convert.ToDouble(textBox17.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            Variables.RebroPodObmotki.bRebraNiz = Convert.ToDouble(textBox18.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            Variables.RebroPodObmotki.hFaski = Convert.ToDouble(textBox19.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            Variables.RebroPodObmotki.bFaski = Convert.ToDouble(textBox20.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            Variables.RebroPodObmotki.sRebra = Convert.ToDouble(textBox21.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
 
             rebroPodObmotki.editRebroPodObmotki(transfer, a);
 
@@ -353,6 +341,43 @@ namespace Variables
             Form2 form = new Form2();
             form.pictureBox1.Image = pictureBox9.Image;
             form.ShowDialog();
+        }
+
+        private void RebroPodObmotki_CheckedChanged(object sender, EventArgs e)
+        {
+            groupBox6.Enabled = false;
+
+            if (RebroPodObmotki.Checked == true)
+            {
+                groupBox6.Enabled = true;
+            }
+
+        }
+
+        private void Kosinki_CheckedChanged(object sender, EventArgs e)
+        {
+            groupBox7.Enabled = false;
+
+            if (Kosinki.Checked == true)
+            {
+                groupBox7.Enabled = true;
+            }
+        }
+
+        private void UporDlyaPolubandazha_CheckedChanged(object sender, EventArgs e)
+        {
+            groupBox8.Enabled = false;
+
+            if (UporDlyaPolubandazha.Checked == true)
+            {
+                groupBox8.Enabled = true;
+            }
+        }
+
+
+        private void groupBox8_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
