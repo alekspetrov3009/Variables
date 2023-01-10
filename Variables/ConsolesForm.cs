@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Variables
 {
-    public partial class FormPrincipal : Form
+    public partial class ConsolesForm : Form
     {
-        public FormPrincipal()
+        public ConsolesForm()
         {
             InitializeComponent();
         }

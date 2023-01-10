@@ -387,6 +387,50 @@ namespace Variables
                 groupBox9.Enabled = true;
             }
         }
+
+        private void inputData_Click(object sender, EventArgs e)
+        {
+            newForm<InputForm>();
+        }
+
+        private void newForm<MiForm>() where MiForm : Form, new()
+        {
+            Form formulario;
+            formulario = mainPanel.Controls.OfType<MiForm>().FirstOrDefault();//Busca en la colecion el formulario
+            //si el formulario/instancia no existe
+            if (formulario == null)
+            {
+                formulario = new MiForm();
+                formulario.TopLevel = false;
+                formulario.FormBorderStyle = FormBorderStyle.None;
+                formulario.Dock = DockStyle.Fill;
+                mainPanel.Controls.Add(formulario);
+                mainPanel.Tag = formulario;
+                formulario.Show();
+                formulario.BringToFront();
+               // formulario.FormClosed += new FormClosedEventHandler(CloseForms);
+            }
+            else
+            {
+                formulario.BringToFront();
+            }
+        }
+
+        private void consolesButton_Click(object sender, EventArgs e)
+        {
+            newForm<ConsolesForm>();
+        }
+
+
+        //private void CloseForms(object sender, FormClosedEventArgs e)
+        //{
+        //    if (System.Windows.Forms.Application.OpenForms["Form1"] == null)
+        //        button1.BackColor = Color.FromArgb(4, 41, 68);
+        //    if (System.Windows.Forms.Application.OpenForms["Form2"] == null)
+        //        button2.BackColor = Color.FromArgb(4, 41, 68);
+        //    if (System.Windows.Forms.Application.OpenForms["Form3"] == null)
+        //        button3.BackColor = Color.FromArgb(4, 41, 68);
+        //}
     }
 }
 
