@@ -22,12 +22,12 @@ using static System.Net.WebRequestMethods;
 
 namespace Variables
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         public static ksPart transfer;
         public static VariableCollection a;
 
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
@@ -39,7 +39,7 @@ namespace Variables
 
             public void variables(string detailPath)
             {
-                Form1 form1 = new Form1();
+                MainForm form1 = new MainForm();
                 string progId = "KOMPAS.Application.5";
                 KompasObject kompas = (KompasObject)Marshal.GetActiveObject(progId);
                 _Application My7Komp = (_Application)kompas.ksGetApplication7();
@@ -358,9 +358,11 @@ namespace Variables
         {
             groupBox7.Enabled = false;
 
+
             if (Kosinki.Checked == true)
             {
                 groupBox7.Enabled = true;
+
             }
         }
 
@@ -368,16 +370,22 @@ namespace Variables
         {
             groupBox8.Enabled = false;
 
+
             if (UporDlyaPolubandazha.Checked == true)
             {
                 groupBox8.Enabled = true;
+
             }
         }
 
-
-        private void groupBox8_Enter(object sender, EventArgs e)
+        private void zamkovayaPlastina_CheckedChanged(object sender, EventArgs e)
         {
+            groupBox9.Enabled = false;
 
+            if (zamkovayaPlastina.Checked == true)
+            {
+                groupBox9.Enabled = true;
+            }
         }
     }
 }
