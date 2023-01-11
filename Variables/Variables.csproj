@@ -75,6 +75,16 @@
       <HintPath>C:\Program Files\ASCON\KOMPAS-3D v20\SDK\Samples\Common\KompasLibrary.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Messaging" />
@@ -94,23 +104,41 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BalkaYarmNizh.cs" />
-    <Compile Include="ConsolesForm.cs">
+    <Compile Include="Forms\ConsolesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConsolesForm.Designer.cs">
+    <Compile Include="Forms\ConsolesForm.Designer.cs">
       <DependentUpon>ConsolesForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="Forms\Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
+    <Compile Include="Forms\Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="InputForm.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Forms\UC_BalkaNizNN.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="InputForm.Designer.cs">
-      <DependentUpon>InputForm.cs</DependentUpon>
+    <Compile Include="Forms\UC_BalkaNizNN.Designer.cs">
+      <DependentUpon>UC_BalkaNizNN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UC_Consoles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UC_Consoles.Designer.cs">
+      <DependentUpon>UC_Consoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UC_ConsoleTypes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UC_ConsoleTypes.Designer.cs">
+      <DependentUpon>UC_ConsoleTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UC_InputData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UC_InputData.Designer.cs">
+      <DependentUpon>UC_InputData.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -131,16 +159,25 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RebroPodObmotki.cs" />
     <Compile Include="Upor.cs" />
-    <EmbeddedResource Include="ConsolesForm.resx">
+    <EmbeddedResource Include="Forms\ConsolesForm.resx">
       <DependentUpon>ConsolesForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InputForm.resx">
-      <DependentUpon>InputForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\UC_BalkaNizNN.resx">
+      <DependentUpon>UC_BalkaNizNN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UC_Consoles.resx">
+      <DependentUpon>UC_Consoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UC_ConsoleTypes.resx">
+      <DependentUpon>UC_ConsoleTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UC_InputData.resx">
+      <DependentUpon>UC_InputData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
+    <EmbeddedResource Include="Forms\Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -151,6 +188,7 @@
     <EmbeddedResource Include="Shveller.resx">
       <DependentUpon>Shveller.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -169,6 +207,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="pictures\Logo_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

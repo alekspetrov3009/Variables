@@ -18,6 +18,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Variables;
+using Variables.Forms;
 using static System.Net.WebRequestMethods;
 
 namespace Variables
@@ -388,38 +389,97 @@ namespace Variables
             }
         }
 
-        private void inputData_Click(object sender, EventArgs e)
+
+
+        private void addUserControls(UserControl userControl) 
         {
-            newForm<InputForm>();
+            userControl.Dock = DockStyle.Fill;
+            mainPanel.Controls.Clear();
+            mainPanel.Controls.Add(userControl);
+            userControl.BringToFront();
         }
 
-        private void newForm<MiForm>() where MiForm : Form, new()
+        public static void addUserControlsConsoles(UserControl userControl)
         {
-            Form formulario;
-            formulario = mainPanel.Controls.OfType<MiForm>().FirstOrDefault();//Busca en la colecion el formulario
-            //si el formulario/instancia no existe
-            if (formulario == null)
+            UC_Consoles consoles = new UC_Consoles();
+
+            userControl.Dock = DockStyle.Fill;
+            consoles.consolesPanel.Controls.Clear();
+            consoles.consolesPanel.Controls.Add(userControl);
+            userControl.BringToFront();
+        }
+
+        
+
+        private void BtnClick(object sender, EventArgs e)
+        {
+            foreach(var pnl in tableLayoutPanel1.Controls.OfType<Panel>())
             {
-                formulario = new MiForm();
-                formulario.TopLevel = false;
-                formulario.FormBorderStyle = FormBorderStyle.None;
-                formulario.Dock = DockStyle.Fill;
-                mainPanel.Controls.Add(formulario);
-                mainPanel.Tag = formulario;
-                formulario.Show();
-                formulario.BringToFront();
-               // formulario.FormClosed += new FormClosedEventHandler(CloseForms);
+                pnl.BackColor = Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(67)))), ((int)(((byte)(97)))));
             }
-            else
+
+            Button btn = (Button)sender;
+
+            switch (btn.Name)
             {
-                formulario.BringToFront();
+                case "consolesButton":
+                    addUserControls(new UC_Consoles());
+                    
+                    break;
+
+                case "inputDataButton":
+                    addUserControls(new UC_InputData());
+                    break;
+
+                case "btnBalkaNizNN":
+                    addUserControlsConsoles(new UC_BalkaNizNN());
+                    //panelBalkaNizNN.BackColor = Color.FromArgb((20), (67), (97));
+                    break;
+
+                default: 
+                    break;
             }
         }
 
-        private void consolesButton_Click(object sender, EventArgs e)
-        {
-            newForm<ConsolesForm>();
-        }
+        
+
+
+
+
+
+        //private void inputData_Click(object sender, EventArgs e)
+        //{
+        //    newForm<InputMagnitForm>();
+        //    //inputDataButton.BackColor = Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(67)))), ((int)(((byte)(97)))));
+
+        //}
+
+        //private void newForm<MiForm>() where MiForm : Form, new()
+        //{
+        //    Form newForm;
+        //    newForm = mainPanel.Controls.OfType<MiForm>().FirstOrDefault();
+        //    if (newForm == null)
+        //    {
+        //        newForm = new MiForm();
+        //        newForm.TopLevel = false;
+        //        newForm.FormBorderStyle = FormBorderStyle.None;
+        //        newForm.Dock = DockStyle.Fill;
+        //        mainPanel.Controls.Add(newForm);
+        //        mainPanel.Tag = newForm;
+        //        newForm.Show();
+        //        newForm.BringToFront();
+        //       // formulario.FormClosed += new FormClosedEventHandler(CloseForms);
+        //    }
+        //    else
+        //    {
+        //        newForm.BringToFront();
+        //    }
+        //}
+
+        //private void consolesButton_Click(object sender, EventArgs e)
+        //{
+        //    newForm<ConsolesForm>();
+        //}
 
 
         //private void CloseForms(object sender, FormClosedEventArgs e)

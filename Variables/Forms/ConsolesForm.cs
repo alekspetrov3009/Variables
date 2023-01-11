@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Variables
 {
-    public partial class InputForm : Form
+    public partial class ConsolesForm : Form
     {
-        public InputForm()
+        public ConsolesForm()
         {
             InitializeComponent();
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ConsolesForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

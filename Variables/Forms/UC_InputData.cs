@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Variables
+namespace Variables.Forms
 {
-    public partial class ConsolesForm : Form
+    public partial class UC_InputData : UserControl
     {
-        public ConsolesForm()
+        public UC_InputData()
         {
             InitializeComponent();
         }
