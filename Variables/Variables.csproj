@@ -116,11 +116,23 @@
     <Compile Include="Forms\Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UC_BalkaNizNN.cs">
+    <Compile Include="Forms\UC_BalkaYarmNizh.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\UC_BalkaNizNN.Designer.cs">
-      <DependentUpon>UC_BalkaNizNN.cs</DependentUpon>
+    <Compile Include="Forms\UC_BalkaYarmNizh.Designer.cs">
+      <DependentUpon>UC_BalkaYarmNizh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UC_Rebra.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UC_Rebra.Designer.cs">
+      <DependentUpon>UC_Rebra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UC_Shveller.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\UC_Shveller.Designer.cs">
+      <DependentUpon>UC_Shveller.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UC_Consoles.cs">
       <SubType>UserControl</SubType>
@@ -162,8 +174,14 @@
     <EmbeddedResource Include="Forms\ConsolesForm.resx">
       <DependentUpon>ConsolesForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UC_BalkaNizNN.resx">
-      <DependentUpon>UC_BalkaNizNN.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\UC_BalkaYarmNizh.resx">
+      <DependentUpon>UC_BalkaYarmNizh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UC_Rebra.resx">
+      <DependentUpon>UC_Rebra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UC_Shveller.resx">
+      <DependentUpon>UC_Shveller.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UC_Consoles.resx">
       <DependentUpon>UC_Consoles.cs</DependentUpon>

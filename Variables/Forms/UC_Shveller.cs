@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Variables.Forms
 {
-    public partial class UC_BalkaNizNN : UserControl
+    public partial class UC_Shveller : UserControl
     {
-        public UC_BalkaNizNN()
+        public UC_Shveller()
         {
             InitializeComponent();
         }

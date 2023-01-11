@@ -432,7 +432,7 @@ namespace Variables
                     break;
 
                 case "btnBalkaNizNN":
-                    addUserControlsConsoles(new UC_BalkaNizNN());
+                    addUserControlsConsoles(new UC_Shveller());
                     //panelBalkaNizNN.BackColor = Color.FromArgb((20), (67), (97));
                     break;
 

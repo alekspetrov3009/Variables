@@ -37,7 +37,7 @@ namespace Variables.Forms
             switch (btn.Name)
             {
                 case "balkaType1":
-                    addUserControls(new UC_BalkaNizNN());
+                    addUserControls(new UC_BalkaYarmNizh());
                     panelType1.BackColor = Color.FromArgb((25), (179), (110));
                     break;
 

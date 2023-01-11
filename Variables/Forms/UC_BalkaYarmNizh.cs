@@ -10,24 +10,24 @@ using System.Windows.Forms;
 
 namespace Variables.Forms
 {
-    public partial class UC_Consoles : UserControl
+    public partial class UC_BalkaYarmNizh : UserControl
     {
-        public UC_Consoles()
+        public UC_BalkaYarmNizh()
         {
             InitializeComponent();
         }
-
         private void addUserControls(UserControl userControl)
         {
             userControl.Dock = DockStyle.Fill;
-            consolesPanel.Controls.Clear();
-            consolesPanel.Controls.Add(userControl);
+            mainPanel.Controls.Clear();
+            mainPanel.Controls.Add(userControl);
             userControl.BringToFront();
         }
 
-        private void BtnClick(object sender, EventArgs e)
+
+        private void SideBtnClick(object sender, EventArgs e)
         {
-            foreach (var pnl in tableLayoutPanel1.Controls.OfType<Panel>())
+            foreach (var pnl in tableLayoutPanel2.Controls.OfType<Panel>())
             {
                 pnl.BackColor = Color.FromArgb((20), (67), (97));
             }
@@ -36,21 +36,23 @@ namespace Variables.Forms
 
             switch (btn.Name)
             {
-                case "btnBalkaNizNN":
+                case "btnShveller":
                     addUserControls(new UC_Shveller());
-                    panelBalkaNizNN.BackColor = Color.FromArgb((25), (179), (110));
-                    
-                    break; 
-
-                case "btnBalkaNizVN":
-                    addUserControls(new UC_ConsoleTypes());
-                    panelBalkaNizVN.BackColor = Color.FromArgb((25), (179), (110));
+                    sidePanel1.BackColor = Color.FromArgb((25), (179), (110));
                     break;
+
+                case "btnRebra":
+                    addUserControls(new UC_Rebra());
+                    sidePanel2.BackColor = Color.FromArgb((25), (179), (110));
+                    break;
+
+                case "btnSborka":
+                    addUserControls(new UC_ConsoleTypes());
+                    sidePanel3.BackColor = Color.FromArgb((25), (179), (110));
+                    break;
+
+
             }
         }
-
-        
-
     }
-    
 }
