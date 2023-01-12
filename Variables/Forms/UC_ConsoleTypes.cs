@@ -41,20 +41,20 @@ namespace Variables.Forms
                     panelType1.BackColor = Color.FromArgb((25), (179), (110));
                     break;
 
-                case "balkaType2":
-                    addUserControls(new UC_ConsoleTypes());
-                    panelType2.BackColor = Color.FromArgb((25), (179), (110));
-                    break;
+                //case "balkaType2":
+                //    addUserControls(new UC_ConsoleTypes());
+                //    panelType2.BackColor = Color.FromArgb((25), (179), (110));
+                //    break;
 
-                case "balkaType3":
-                    addUserControls(new UC_ConsoleTypes());
-                    panelType3.BackColor = Color.FromArgb((25), (179), (110));
-                    break;
+                //case "balkaType3":
+                //    addUserControls(new UC_ConsoleTypes());
+                //    panelType3.BackColor = Color.FromArgb((25), (179), (110));
+                //    break;
 
-                case "balkaType4":
-                    addUserControls(new UC_ConsoleTypes());
-                    panelType4.BackColor = Color.FromArgb((25), (179), (110));
-                    break;
+                //case "balkaType4":
+                //    addUserControls(new UC_ConsoleTypes());
+                //    panelType4.BackColor = Color.FromArgb((25), (179), (110));
+                //    break;
 
             }
         }

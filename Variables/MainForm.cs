@@ -64,49 +64,49 @@ namespace Variables
         }
 
 
-        public void rebuildShveller_Click(object sender, EventArgs e)
-        {
-            getVariables getVariables = new getVariables();
-            getVariables.variables(@"\Швеллер\Швеллер.m3d");
+        //public void rebuildShveller_Click(object sender, EventArgs e)
+        //{
+        //    getVariables getVariables = new getVariables();
+        //    getVariables.variables(@"\Швеллер\Швеллер.m3d");
 
-            Shveller shveller = new Shveller();
+        //    Shveller shveller = new Shveller();
 
-            Shveller.tolSchv = Convert.ToDouble(textBox11.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-            Shveller.dlSchv = Convert.ToDouble(textBox12.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-            Shveller.shirPolki = Convert.ToDouble(textBox13.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-            Shveller.radiusSkrugl = Convert.ToDouble(textBox14.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-            Shveller.mezhOsev = Convert.ToDouble(textBox15.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+        //    Shveller.tolSchv = Convert.ToDouble(textBox11.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+        //    Shveller.dlSchv = Convert.ToDouble(textBox12.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+        //    Shveller.shirPolki = Convert.ToDouble(textBox13.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+        //    Shveller.radiusSkrugl = Convert.ToDouble(textBox14.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+        //    Shveller.mezhOsev = Convert.ToDouble(textBox15.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
 
 
-            if (OtverstiyaPodPolubandazh.Checked == true)
-            {
-                Shveller.vOB = Convert.ToDouble(textBox1.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-                Shveller.dOB = Convert.ToDouble(textBox2.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-                Shveller.hOB = Convert.ToDouble(textBox3.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-                Shveller.radiusSOB = Convert.ToDouble(textBox4.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-            }
+        //    if (OtverstiyaPodPolubandazh.Checked == true)
+        //    {
+        //        Shveller.vOB = Convert.ToDouble(textBox1.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+        //        Shveller.dOB = Convert.ToDouble(textBox2.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+        //        Shveller.hOB = Convert.ToDouble(textBox3.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+        //        Shveller.radiusSOB = Convert.ToDouble(textBox4.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+        //    }
 
-            if (SmotovieOtverstiya.Checked == true)
-            {
-                Shveller.diamSO = Convert.ToDouble(textBox5.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-            }
+        //    if (SmotovieOtverstiya.Checked == true)
+        //    {
+        //        Shveller.diamSO = Convert.ToDouble(textBox5.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+        //    }
 
-            if (OtverstiyaPodMost.Checked == true)
-            {
-                Shveller.moOPM = Convert.ToDouble(textBox6.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-                Shveller.diamOPM = Convert.ToDouble(textBox7.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-            }
+        //    if (OtverstiyaPodMost.Checked == true)
+        //    {
+        //        Shveller.moOPM = Convert.ToDouble(textBox6.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+        //        Shveller.diamOPM = Convert.ToDouble(textBox7.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+        //    }
 
-            if (OtverstiyaPodLapi.Checked == true)
-            {
-                Shveller.diamOL = Convert.ToDouble(textBox8.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-                Shveller.moOL = Convert.ToDouble(textBox9.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-                Shveller.polkaLapa = Convert.ToDouble(textBox10.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+        //    if (OtverstiyaPodLapi.Checked == true)
+        //    {
+        //        Shveller.diamOL = Convert.ToDouble(textBox8.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+        //        Shveller.moOL = Convert.ToDouble(textBox9.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+        //        Shveller.polkaLapa = Convert.ToDouble(textBox10.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
 
-            }
+        //    }
 
-            shveller.editShveller(transfer, a);
-        }
+        //    shveller.editShveller(transfer, a);
+        //}
 
         private void RebuildBalkaYarmNizh_Click(object sender, EventArgs e)
         {
@@ -134,54 +134,54 @@ namespace Variables
         }
 
 
-        private void OtverstiyaPodPolubandazh_CheckedChanged(object sender, EventArgs e)
-        {
-            groupBox3.Enabled= false;
+        //private void OtverstiyaPodPolubandazh_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    groupBox3.Enabled= false;
 
-            if (OtverstiyaPodPolubandazh.Checked == true)
-            {
-                Shveller.boolOB = 1;
-                groupBox3.Enabled = true;
-            }
-            else
-                Shveller.boolOB = 0;
-        }
+        //    if (OtverstiyaPodPolubandazh.Checked == true)
+        //    {
+        //        Shveller.boolOB = 1;
+        //        groupBox3.Enabled = true;
+        //    }
+        //    else
+        //        Shveller.boolOB = 0;
+        //}
 
-        private void SmotrovieOtverstiya_CheckedChanged(object sender, EventArgs e)
-        {
-            groupBox1.Enabled = false;
+        //private void SmotrovieOtverstiya_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    groupBox1.Enabled = false;
 
-            if (SmotovieOtverstiya.Checked == true)
-            {
-                Shveller.boolSO = 1;
-                groupBox1.Enabled = true;
-            }
-            else Shveller.boolSO = 0;
-        }
+        //    if (SmotovieOtverstiya.Checked == true)
+        //    {
+        //        Shveller.boolSO = 1;
+        //        groupBox1.Enabled = true;
+        //    }
+        //    else Shveller.boolSO = 0;
+        //}
 
-        private void OtverstiyaPodMost_CheckedChanged(object sender, EventArgs e)
-        {
-            groupBox4.Enabled = false;
+        //private void OtverstiyaPodMost_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    groupBox4.Enabled = false;
 
-            if (OtverstiyaPodMost.Checked == true)
-            {
-                Shveller.boolOPM = 1;
-                groupBox4.Enabled = true;
-            }
-            else Shveller.boolOPM = 0;
-        }
+        //    if (OtverstiyaPodMost.Checked == true)
+        //    {
+        //        Shveller.boolOPM = 1;
+        //        groupBox4.Enabled = true;
+        //    }
+        //    else Shveller.boolOPM = 0;
+        //}
 
-        private void OtverstiyaPodLapi_CheckedChanged(object sender, EventArgs e)
-        {
-            groupBox5.Enabled = false;
+        //private void OtverstiyaPodLapi_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    groupBox5.Enabled = false;
 
-            if (OtverstiyaPodLapi.Checked == true)
-            {
-                Shveller.boolOl = 1;
-                groupBox5.Enabled = true;
-            }
-            else Shveller.boolOl = 0;
-        }
+        //    if (OtverstiyaPodLapi.Checked == true)
+        //    {
+        //        Shveller.boolOl = 1;
+        //        groupBox5.Enabled = true;
+        //    }
+        //    else Shveller.boolOl = 0;
+        //}
 
         private void rebuildRebroPodObmotki_Click(object sender, EventArgs e)
         {
@@ -441,7 +441,27 @@ namespace Variables
             }
         }
 
-        
+
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnMaximize_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+                this.WindowState = FormWindowState.Maximized;
+            else
+                this.WindowState = FormWindowState.Normal;
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+
 
 
 

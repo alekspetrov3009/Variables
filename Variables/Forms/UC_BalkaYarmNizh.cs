@@ -23,6 +23,23 @@ namespace Variables.Forms
             mainPanel.Controls.Add(userControl);
             userControl.BringToFront();
         }
+    
+        //{
+        //if (userControl == null)
+        //{
+        //    userControl.BringToFront();
+
+        //}
+        //else
+        //{
+        //    userControl.Dock = DockStyle.Fill;
+        //    mainPanel.Controls.Add(userControl);
+        //    userControl.BringToFront();
+        //    userControl.Show();
+        //}
+
+
+
 
 
         private void SideBtnClick(object sender, EventArgs e)
@@ -50,9 +67,36 @@ namespace Variables.Forms
                     addUserControls(new UC_ConsoleTypes());
                     sidePanel3.BackColor = Color.FromArgb((25), (179), (110));
                     break;
-
-
             }
+
+            //private void inputData_Click(object sender, EventArgs e)
+            //{
+            //    newForm<InputMagnitForm>();
+            //    //inputDataButton.BackColor = Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(67)))), ((int)(((byte)(97)))));
+
+            //}
+
+            //private void newForm<MiForm>() where MiForm : Form, new()
+            //{
+            //    Form newForm;
+            //    newForm = mainPanel.Controls.OfType<MiForm>().FirstOrDefault();
+            //    if (newForm == null)
+            //    {
+            //        newForm = new MiForm();
+            //        newForm.TopLevel = false;
+            //        newForm.FormBorderStyle = FormBorderStyle.None;
+            //        newForm.Dock = DockStyle.Fill;
+            //        mainPanel.Controls.Add(newForm);
+            //        mainPanel.Tag = newForm;
+            //        newForm.Show();
+            //        newForm.BringToFront();
+            //       // formulario.FormClosed += new FormClosedEventHandler(CloseForms);
+            //    }
+            //    else
+            //    {
+            //        newForm.BringToFront();
+            //    }
+            //}
         }
     }
 }

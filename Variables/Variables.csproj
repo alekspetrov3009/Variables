@@ -228,6 +228,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <None Include="pictures\exit_icon.png" />
+    <None Include="pictures\maximize_icon.png" />
+    <None Include="pictures\minimize_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
