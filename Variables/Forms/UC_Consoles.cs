@@ -37,13 +37,13 @@ namespace Variables.Forms
             switch (btn.Name)
             {
                 case "btnBalkaNizNN":
-                    addUserControls(new UC_Shveller());
+                    addUserControls(new UC_ConsoleTypesVN());
                     panelBalkaNizNN.BackColor = Color.FromArgb((25), (179), (110));
                     
                     break; 
 
                 case "btnBalkaNizVN":
-                    addUserControls(new UC_ConsoleTypes());
+                    addUserControls(new UC_ConsoleTypesVN());
                     panelBalkaNizVN.BackColor = Color.FromArgb((25), (179), (110));
                     break;
             }

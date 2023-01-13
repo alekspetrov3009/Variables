@@ -64,8 +64,24 @@ namespace Variables.Forms
                 a.refresh();
             }
         }
+        //bool allTextBoxesIsNotEmpty()
+        //{
+        //    bool AllIsOk = true;
+        //    foreach (Control C in this.Controls)
+        //    {
+        //        if (C is TextBox)
+        //            AllIsOk &= (((TextBox)C).TextLength > 0)
+        //                    && (((TextBox)C).TextLength > 0);
+        //    }
+        //    return AllIsOk;
+        //}
+        //private void textBoxTextChanged(object sender, EventArgs e)
+        //{
+        //        rebuildShveller.Enabled = allTextBoxesIsNotEmpty();
+        //}
         private void rebuildShveller_Click(object sender, EventArgs e)
         {
+            
             getVariables getVariables = new getVariables();
             getVariables.variables(@"\Швеллер\Швеллер.m3d");
 
@@ -115,5 +131,7 @@ namespace Variables.Forms
 
             shveller.editShveller(transfer, a);
         }
+        
+
     }
 }

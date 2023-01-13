@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Узел3");
-            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Узел0", new System.Windows.Forms.TreeNode[] {
-            treeNode5});
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Узел2");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Узел1", new System.Windows.Forms.TreeNode[] {
-            treeNode7});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Узел3");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Узел0", new System.Windows.Forms.TreeNode[] {
+            treeNode1});
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Узел2");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Узел1", new System.Windows.Forms.TreeNode[] {
+            treeNode3});
             this.panel1 = new System.Windows.Forms.Panel();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -252,6 +252,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(952, 549);
             this.tabControl1.TabIndex = 4;
+            this.tabControl1.Visible = false;
             // 
             // tabPage2
             // 
@@ -1226,17 +1227,17 @@
             this.treeView1.Location = new System.Drawing.Point(3, 6);
             this.treeView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.treeView1.Name = "treeView1";
-            treeNode5.Name = "Узел3";
-            treeNode5.Text = "Узел3";
-            treeNode6.Name = "Узел0";
-            treeNode6.Text = "Узел0";
-            treeNode7.Name = "Узел2";
-            treeNode7.Text = "Узел2";
-            treeNode8.Name = "Узел1";
-            treeNode8.Text = "Узел1";
+            treeNode1.Name = "Узел3";
+            treeNode1.Text = "Узел3";
+            treeNode2.Name = "Узел0";
+            treeNode2.Text = "Узел0";
+            treeNode3.Name = "Узел2";
+            treeNode3.Text = "Узел2";
+            treeNode4.Name = "Узел1";
+            treeNode4.Text = "Узел1";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode6,
-            treeNode8});
+            treeNode2,
+            treeNode4});
             this.treeView1.Size = new System.Drawing.Size(263, 838);
             this.treeView1.TabIndex = 60;
             // 

@@ -140,11 +140,11 @@
     <Compile Include="Forms\UC_Consoles.Designer.cs">
       <DependentUpon>UC_Consoles.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UC_ConsoleTypes.cs">
+    <Compile Include="Forms\UC_ConsoleTypesVN.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\UC_ConsoleTypes.Designer.cs">
-      <DependentUpon>UC_ConsoleTypes.cs</DependentUpon>
+    <Compile Include="Forms\UC_ConsoleTypesVN.Designer.cs">
+      <DependentUpon>UC_ConsoleTypesVN.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UC_InputData.cs">
       <SubType>UserControl</SubType>
@@ -186,8 +186,8 @@
     <EmbeddedResource Include="Forms\UC_Consoles.resx">
       <DependentUpon>UC_Consoles.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UC_ConsoleTypes.resx">
-      <DependentUpon>UC_ConsoleTypes.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\UC_ConsoleTypesVN.resx">
+      <DependentUpon>UC_ConsoleTypesVN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UC_InputData.resx">
       <DependentUpon>UC_InputData.cs</DependentUpon>

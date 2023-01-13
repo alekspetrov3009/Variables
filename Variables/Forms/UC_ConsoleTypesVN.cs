@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Variables.Forms
 {
-    public partial class UC_ConsoleTypes : UserControl
+    public partial class UC_ConsoleTypesVN : UserControl
     {
-        public UC_ConsoleTypes()
+        public UC_ConsoleTypesVN()
         {
             InitializeComponent();
         }

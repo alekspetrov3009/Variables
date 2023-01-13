@@ -1,6 +1,6 @@
 ﻿namespace Variables.Forms
 {
-    partial class UC_ConsoleTypes
+    partial class UC_ConsoleTypesVN
     {
         /// <summary> 
         /// Обязательная переменная конструктора.

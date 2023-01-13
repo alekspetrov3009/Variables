@@ -64,7 +64,7 @@ namespace Variables.Forms
                     break;
 
                 case "btnSborka":
-                    addUserControls(new UC_ConsoleTypes());
+                    addUserControls(new UC_ConsoleTypesVN());
                     sidePanel3.BackColor = Color.FromArgb((25), (179), (110));
                     break;
             }
