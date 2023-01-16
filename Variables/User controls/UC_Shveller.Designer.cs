@@ -29,33 +29,33 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Shveller));
-            this.OtverstiyaPodMost = new System.Windows.Forms.CheckBox();
-            this.OtverstiyaPodPolubandazh = new System.Windows.Forms.CheckBox();
-            this.SmotovieOtverstiya = new System.Windows.Forms.CheckBox();
+            this.cbOtverstiyaPodMost = new System.Windows.Forms.CheckBox();
+            this.cbOtverstiyaPodPolubandazh = new System.Windows.Forms.CheckBox();
+            this.cbSmotovieOtverstiya = new System.Windows.Forms.CheckBox();
             this.rebuildShveller = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.tbMoOPM = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.tbDiamOPM = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbdOB = new System.Windows.Forms.TextBox();
+            this.tbhOB = new System.Windows.Forms.TextBox();
+            this.tbRadiusSOB = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbvOB = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.tbShirPolki = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.tbDlSchv = new System.Windows.Forms.TextBox();
+            this.tbRadiusSkrugl = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.tbTolSchv = new System.Windows.Forms.TextBox();
+            this.tbMO = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbDiamSO = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -66,15 +66,14 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.OtverstiyaPodLapi = new System.Windows.Forms.CheckBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.tbDiamOL = new System.Windows.Forms.TextBox();
+            this.cbOtverstiyaPodLapi = new System.Windows.Forms.CheckBox();
+            this.tbMoOL = new System.Windows.Forms.TextBox();
+            this.tbPolkaLapa = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox16 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -87,41 +86,41 @@
             this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
-            // OtverstiyaPodMost
+            // cbOtverstiyaPodMost
             // 
-            this.OtverstiyaPodMost.AutoSize = true;
-            this.OtverstiyaPodMost.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.OtverstiyaPodMost.Location = new System.Drawing.Point(4, 23);
-            this.OtverstiyaPodMost.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.OtverstiyaPodMost.Name = "OtverstiyaPodMost";
-            this.OtverstiyaPodMost.Size = new System.Drawing.Size(166, 20);
-            this.OtverstiyaPodMost.TabIndex = 72;
-            this.OtverstiyaPodMost.Text = "Отверстия под мосты";
-            this.OtverstiyaPodMost.UseVisualStyleBackColor = true;
+            this.cbOtverstiyaPodMost.AutoSize = true;
+            this.cbOtverstiyaPodMost.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
+            this.cbOtverstiyaPodMost.Location = new System.Drawing.Point(4, 23);
+            this.cbOtverstiyaPodMost.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbOtverstiyaPodMost.Name = "cbOtverstiyaPodMost";
+            this.cbOtverstiyaPodMost.Size = new System.Drawing.Size(166, 20);
+            this.cbOtverstiyaPodMost.TabIndex = 72;
+            this.cbOtverstiyaPodMost.Text = "Отверстия под мосты";
+            this.cbOtverstiyaPodMost.UseVisualStyleBackColor = true;
             // 
-            // OtverstiyaPodPolubandazh
+            // cbOtverstiyaPodPolubandazh
             // 
-            this.OtverstiyaPodPolubandazh.AutoSize = true;
-            this.OtverstiyaPodPolubandazh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.OtverstiyaPodPolubandazh.Location = new System.Drawing.Point(20, 23);
-            this.OtverstiyaPodPolubandazh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.OtverstiyaPodPolubandazh.Name = "OtverstiyaPodPolubandazh";
-            this.OtverstiyaPodPolubandazh.Size = new System.Drawing.Size(207, 20);
-            this.OtverstiyaPodPolubandazh.TabIndex = 70;
-            this.OtverstiyaPodPolubandazh.Text = "Отверстия под полубандаж";
-            this.OtverstiyaPodPolubandazh.UseVisualStyleBackColor = true;
+            this.cbOtverstiyaPodPolubandazh.AutoSize = true;
+            this.cbOtverstiyaPodPolubandazh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
+            this.cbOtverstiyaPodPolubandazh.Location = new System.Drawing.Point(20, 23);
+            this.cbOtverstiyaPodPolubandazh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbOtverstiyaPodPolubandazh.Name = "cbOtverstiyaPodPolubandazh";
+            this.cbOtverstiyaPodPolubandazh.Size = new System.Drawing.Size(207, 20);
+            this.cbOtverstiyaPodPolubandazh.TabIndex = 70;
+            this.cbOtverstiyaPodPolubandazh.Text = "Отверстия под полубандаж";
+            this.cbOtverstiyaPodPolubandazh.UseVisualStyleBackColor = true;
             // 
-            // SmotovieOtverstiya
+            // cbSmotovieOtverstiya
             // 
-            this.SmotovieOtverstiya.AutoSize = true;
-            this.SmotovieOtverstiya.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.SmotovieOtverstiya.Location = new System.Drawing.Point(19, 22);
-            this.SmotovieOtverstiya.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.SmotovieOtverstiya.Name = "SmotovieOtverstiya";
-            this.SmotovieOtverstiya.Size = new System.Drawing.Size(171, 20);
-            this.SmotovieOtverstiya.TabIndex = 71;
-            this.SmotovieOtverstiya.Text = "Смотровые отверстия";
-            this.SmotovieOtverstiya.UseVisualStyleBackColor = true;
+            this.cbSmotovieOtverstiya.AutoSize = true;
+            this.cbSmotovieOtverstiya.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
+            this.cbSmotovieOtverstiya.Location = new System.Drawing.Point(19, 22);
+            this.cbSmotovieOtverstiya.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbSmotovieOtverstiya.Name = "cbSmotovieOtverstiya";
+            this.cbSmotovieOtverstiya.Size = new System.Drawing.Size(171, 20);
+            this.cbSmotovieOtverstiya.TabIndex = 71;
+            this.cbSmotovieOtverstiya.Text = "Смотровые отверстия";
+            this.cbSmotovieOtverstiya.UseVisualStyleBackColor = true;
             // 
             // rebuildShveller
             // 
@@ -134,14 +133,14 @@
             this.rebuildShveller.UseVisualStyleBackColor = true;
             this.rebuildShveller.Click += new System.EventHandler(this.rebuildShveller_Click);
             // 
-            // textBox6
+            // tbMoOPM
             // 
-            this.textBox6.Location = new System.Drawing.Point(4, 55);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(45, 22);
-            this.textBox6.TabIndex = 21;
-            this.textBox6.WordWrap = false;
+            this.tbMoOPM.Location = new System.Drawing.Point(4, 55);
+            this.tbMoOPM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbMoOPM.Name = "tbMoOPM";
+            this.tbMoOPM.Size = new System.Drawing.Size(45, 22);
+            this.tbMoOPM.TabIndex = 21;
+            this.tbMoOPM.WordWrap = false;
             // 
             // label6
             // 
@@ -152,14 +151,14 @@
             this.label6.TabIndex = 24;
             this.label6.Text = "Диаметр отверстий";
             // 
-            // textBox7
+            // tbDiamOPM
             // 
-            this.textBox7.Location = new System.Drawing.Point(4, 84);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(45, 22);
-            this.textBox7.TabIndex = 23;
-            this.textBox7.WordWrap = false;
+            this.tbDiamOPM.Location = new System.Drawing.Point(4, 84);
+            this.tbDiamOPM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbDiamOPM.Name = "tbDiamOPM";
+            this.tbDiamOPM.Size = new System.Drawing.Size(45, 22);
+            this.tbDiamOPM.TabIndex = 23;
+            this.tbDiamOPM.WordWrap = false;
             // 
             // label7
             // 
@@ -170,32 +169,32 @@
             this.label7.TabIndex = 22;
             this.label7.Text = "Межосевое расстояние";
             // 
-            // textBox2
+            // tbdOB
             // 
-            this.textBox2.Location = new System.Drawing.Point(20, 92);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(45, 22);
-            this.textBox2.TabIndex = 11;
-            this.textBox2.WordWrap = false;
+            this.tbdOB.Location = new System.Drawing.Point(20, 92);
+            this.tbdOB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbdOB.Name = "tbdOB";
+            this.tbdOB.Size = new System.Drawing.Size(45, 22);
+            this.tbdOB.TabIndex = 11;
+            this.tbdOB.WordWrap = false;
             // 
-            // textBox3
+            // tbhOB
             // 
-            this.textBox3.Location = new System.Drawing.Point(20, 121);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(45, 22);
-            this.textBox3.TabIndex = 13;
-            this.textBox3.WordWrap = false;
+            this.tbhOB.Location = new System.Drawing.Point(20, 121);
+            this.tbhOB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbhOB.Name = "tbhOB";
+            this.tbhOB.Size = new System.Drawing.Size(45, 22);
+            this.tbhOB.TabIndex = 13;
+            this.tbhOB.WordWrap = false;
             // 
-            // textBox4
+            // tbRadiusSOB
             // 
-            this.textBox4.Location = new System.Drawing.Point(20, 149);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(45, 22);
-            this.textBox4.TabIndex = 15;
-            this.textBox4.WordWrap = false;
+            this.tbRadiusSOB.Location = new System.Drawing.Point(20, 149);
+            this.tbRadiusSOB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbRadiusSOB.Name = "tbRadiusSOB";
+            this.tbRadiusSOB.Size = new System.Drawing.Size(45, 22);
+            this.tbRadiusSOB.TabIndex = 15;
+            this.tbRadiusSOB.WordWrap = false;
             // 
             // label1
             // 
@@ -224,14 +223,14 @@
             this.label4.TabIndex = 16;
             this.label4.Text = "Радиус скругления окна";
             // 
-            // textBox1
+            // tbvOB
             // 
-            this.textBox1.Location = new System.Drawing.Point(20, 64);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(45, 22);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.WordWrap = false;
+            this.tbvOB.Location = new System.Drawing.Point(20, 64);
+            this.tbvOB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbvOB.Name = "tbvOB";
+            this.tbvOB.Size = new System.Drawing.Size(45, 22);
+            this.tbvOB.TabIndex = 9;
+            this.tbvOB.WordWrap = false;
             // 
             // label3
             // 
@@ -251,14 +250,14 @@
             this.label13.TabIndex = 42;
             this.label13.Text = "Длина швеллера";
             // 
-            // textBox13
+            // tbShirPolki
             // 
-            this.textBox13.Location = new System.Drawing.Point(21, 75);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(45, 22);
-            this.textBox13.TabIndex = 49;
-            this.textBox13.WordWrap = false;
+            this.tbShirPolki.Location = new System.Drawing.Point(21, 75);
+            this.tbShirPolki.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbShirPolki.Name = "tbShirPolki";
+            this.tbShirPolki.Size = new System.Drawing.Size(45, 22);
+            this.tbShirPolki.TabIndex = 49;
+            this.tbShirPolki.WordWrap = false;
             // 
             // label11
             // 
@@ -269,25 +268,25 @@
             this.label11.TabIndex = 56;
             this.label11.Text = "Радиус сгиба";
             // 
-            // textBox12
+            // tbDlSchv
             // 
-            this.textBox12.Location = new System.Drawing.Point(21, 47);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(45, 22);
-            this.textBox12.TabIndex = 41;
-            this.textBox12.Text = "L";
-            this.textBox12.WordWrap = false;
+            this.tbDlSchv.Location = new System.Drawing.Point(21, 47);
+            this.tbDlSchv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbDlSchv.Name = "tbDlSchv";
+            this.tbDlSchv.Size = new System.Drawing.Size(45, 22);
+            this.tbDlSchv.TabIndex = 41;
+            this.tbDlSchv.Text = "L";
+            this.tbDlSchv.WordWrap = false;
             // 
-            // textBox14
+            // tbRadiusSkrugl
             // 
-            this.textBox14.Location = new System.Drawing.Point(21, 103);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(45, 22);
-            this.textBox14.TabIndex = 55;
-            this.textBox14.Text = "R";
-            this.textBox14.WordWrap = false;
+            this.tbRadiusSkrugl.Location = new System.Drawing.Point(21, 103);
+            this.tbRadiusSkrugl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbRadiusSkrugl.Name = "tbRadiusSkrugl";
+            this.tbRadiusSkrugl.Size = new System.Drawing.Size(45, 22);
+            this.tbRadiusSkrugl.TabIndex = 55;
+            this.tbRadiusSkrugl.Text = "R";
+            this.tbRadiusSkrugl.WordWrap = false;
             // 
             // label12
             // 
@@ -298,24 +297,24 @@
             this.label12.TabIndex = 50;
             this.label12.Text = "Ширина полки";
             // 
-            // textBox11
+            // tbTolSchv
             // 
-            this.textBox11.Location = new System.Drawing.Point(21, 18);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(45, 22);
-            this.textBox11.TabIndex = 31;
-            this.textBox11.Text = "s";
-            this.textBox11.WordWrap = false;
+            this.tbTolSchv.Location = new System.Drawing.Point(21, 18);
+            this.tbTolSchv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbTolSchv.Name = "tbTolSchv";
+            this.tbTolSchv.Size = new System.Drawing.Size(45, 22);
+            this.tbTolSchv.TabIndex = 31;
+            this.tbTolSchv.Text = "s";
+            this.tbTolSchv.WordWrap = false;
             // 
-            // textBox15
+            // tbMO
             // 
-            this.textBox15.Location = new System.Drawing.Point(21, 130);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(45, 22);
-            this.textBox15.TabIndex = 57;
-            this.textBox15.WordWrap = false;
+            this.tbMO.Location = new System.Drawing.Point(21, 130);
+            this.tbMO.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbMO.Name = "tbMO";
+            this.tbMO.Size = new System.Drawing.Size(45, 22);
+            this.tbMO.TabIndex = 57;
+            this.tbMO.WordWrap = false;
             // 
             // label14
             // 
@@ -335,14 +334,14 @@
             this.label15.TabIndex = 58;
             this.label15.Text = "Расстояние между осями стержня";
             // 
-            // textBox5
+            // tbDiamSO
             // 
-            this.textBox5.Location = new System.Drawing.Point(19, 48);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(45, 22);
-            this.textBox5.TabIndex = 17;
-            this.textBox5.WordWrap = false;
+            this.tbDiamSO.Location = new System.Drawing.Point(19, 48);
+            this.tbDiamSO.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbDiamSO.Name = "tbDiamSO";
+            this.tbDiamSO.Size = new System.Drawing.Size(45, 22);
+            this.tbDiamSO.TabIndex = 17;
+            this.tbDiamSO.WordWrap = false;
             // 
             // label5
             // 
@@ -407,14 +406,14 @@
             this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(85)))), ((int)(((byte)(119)))));
             this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.textBox11);
-            this.panel1.Controls.Add(this.textBox13);
+            this.panel1.Controls.Add(this.tbTolSchv);
+            this.panel1.Controls.Add(this.tbShirPolki);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.textBox12);
+            this.panel1.Controls.Add(this.tbDlSchv);
             this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.textBox14);
-            this.panel1.Controls.Add(this.textBox15);
+            this.panel1.Controls.Add(this.tbRadiusSkrugl);
+            this.panel1.Controls.Add(this.tbMO);
             this.panel1.Controls.Add(this.label12);
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
             this.panel1.Location = new System.Drawing.Point(16, 20);
@@ -427,11 +426,11 @@
             // 
             this.panel2.AutoSize = true;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(85)))), ((int)(((byte)(119)))));
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.OtverstiyaPodPolubandazh);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.tbdOB);
+            this.panel2.Controls.Add(this.cbOtverstiyaPodPolubandazh);
+            this.panel2.Controls.Add(this.tbhOB);
+            this.panel2.Controls.Add(this.tbvOB);
+            this.panel2.Controls.Add(this.tbRadiusSOB);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label4);
@@ -449,9 +448,9 @@
             this.panel3.AutoSize = true;
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(85)))), ((int)(((byte)(119)))));
             this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Controls.Add(this.textBox5);
+            this.panel3.Controls.Add(this.tbDiamSO);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.SmotovieOtverstiya);
+            this.panel3.Controls.Add(this.cbSmotovieOtverstiya);
             this.panel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
             this.panel3.Location = new System.Drawing.Point(16, 271);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
@@ -463,12 +462,12 @@
             // 
             this.panel4.AutoSize = true;
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(85)))), ((int)(((byte)(119)))));
-            this.panel4.Controls.Add(this.textBox6);
+            this.panel4.Controls.Add(this.tbMoOPM);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Controls.Add(this.textBox7);
-            this.panel4.Controls.Add(this.OtverstiyaPodMost);
+            this.panel4.Controls.Add(this.tbDiamOPM);
+            this.panel4.Controls.Add(this.cbOtverstiyaPodMost);
             this.panel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
             this.panel4.Location = new System.Drawing.Point(525, 271);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
@@ -488,44 +487,44 @@
             this.pictureBox5.TabIndex = 63;
             this.pictureBox5.TabStop = false;
             // 
-            // textBox8
+            // tbDiamOL
             // 
-            this.textBox8.Location = new System.Drawing.Point(19, 91);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(45, 22);
-            this.textBox8.TabIndex = 25;
-            this.textBox8.WordWrap = false;
+            this.tbDiamOL.Location = new System.Drawing.Point(19, 91);
+            this.tbDiamOL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbDiamOL.Name = "tbDiamOL";
+            this.tbDiamOL.Size = new System.Drawing.Size(45, 22);
+            this.tbDiamOL.TabIndex = 25;
+            this.tbDiamOL.WordWrap = false;
             // 
-            // OtverstiyaPodLapi
+            // cbOtverstiyaPodLapi
             // 
-            this.OtverstiyaPodLapi.AutoSize = true;
-            this.OtverstiyaPodLapi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.OtverstiyaPodLapi.Location = new System.Drawing.Point(19, 20);
-            this.OtverstiyaPodLapi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.OtverstiyaPodLapi.Name = "OtverstiyaPodLapi";
-            this.OtverstiyaPodLapi.Size = new System.Drawing.Size(159, 20);
-            this.OtverstiyaPodLapi.TabIndex = 73;
-            this.OtverstiyaPodLapi.Text = "Отверстия под лапы";
-            this.OtverstiyaPodLapi.UseVisualStyleBackColor = true;
+            this.cbOtverstiyaPodLapi.AutoSize = true;
+            this.cbOtverstiyaPodLapi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
+            this.cbOtverstiyaPodLapi.Location = new System.Drawing.Point(19, 20);
+            this.cbOtverstiyaPodLapi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbOtverstiyaPodLapi.Name = "cbOtverstiyaPodLapi";
+            this.cbOtverstiyaPodLapi.Size = new System.Drawing.Size(159, 20);
+            this.cbOtverstiyaPodLapi.TabIndex = 73;
+            this.cbOtverstiyaPodLapi.Text = "Отверстия под лапы";
+            this.cbOtverstiyaPodLapi.UseVisualStyleBackColor = true;
             // 
-            // textBox9
+            // tbMoOL
             // 
-            this.textBox9.Location = new System.Drawing.Point(19, 119);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(45, 22);
-            this.textBox9.TabIndex = 27;
-            this.textBox9.WordWrap = false;
+            this.tbMoOL.Location = new System.Drawing.Point(19, 119);
+            this.tbMoOL.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbMoOL.Name = "tbMoOL";
+            this.tbMoOL.Size = new System.Drawing.Size(45, 22);
+            this.tbMoOL.TabIndex = 27;
+            this.tbMoOL.WordWrap = false;
             // 
-            // textBox10
+            // tbPolkaLapa
             // 
-            this.textBox10.Location = new System.Drawing.Point(19, 146);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(45, 22);
-            this.textBox10.TabIndex = 29;
-            this.textBox10.WordWrap = false;
+            this.tbPolkaLapa.Location = new System.Drawing.Point(19, 146);
+            this.tbPolkaLapa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbPolkaLapa.Name = "tbPolkaLapa";
+            this.tbPolkaLapa.Size = new System.Drawing.Size(45, 22);
+            this.tbPolkaLapa.TabIndex = 29;
+            this.tbPolkaLapa.WordWrap = false;
             // 
             // label9
             // 
@@ -561,10 +560,10 @@
             this.panel5.Controls.Add(this.label10);
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.label9);
-            this.panel5.Controls.Add(this.textBox10);
-            this.panel5.Controls.Add(this.textBox9);
-            this.panel5.Controls.Add(this.OtverstiyaPodLapi);
-            this.panel5.Controls.Add(this.textBox8);
+            this.panel5.Controls.Add(this.tbPolkaLapa);
+            this.panel5.Controls.Add(this.tbMoOL);
+            this.panel5.Controls.Add(this.cbOtverstiyaPodLapi);
+            this.panel5.Controls.Add(this.tbDiamOL);
             this.panel5.Controls.Add(this.pictureBox5);
             this.panel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
             this.panel5.Location = new System.Drawing.Point(16, 494);
@@ -573,20 +572,12 @@
             this.panel5.Size = new System.Drawing.Size(501, 238);
             this.panel5.TabIndex = 83;
             // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(999, 640);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(100, 22);
-            this.textBox16.TabIndex = 84;
-            // 
             // UC_Shveller
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(67)))), ((int)(((byte)(97)))));
-            this.Controls.Add(this.textBox16);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -618,51 +609,50 @@
         }
 
         #endregion
-        private System.Windows.Forms.CheckBox OtverstiyaPodMost;
-        private System.Windows.Forms.CheckBox OtverstiyaPodPolubandazh;
-        private System.Windows.Forms.CheckBox SmotovieOtverstiya;
+        private System.Windows.Forms.CheckBox cbOtverstiyaPodMost;
+        private System.Windows.Forms.CheckBox cbOtverstiyaPodPolubandazh;
+        private System.Windows.Forms.CheckBox cbSmotovieOtverstiya;
         private System.Windows.Forms.Button rebuildShveller;
-        public System.Windows.Forms.TextBox textBox6;
+        public System.Windows.Forms.TextBox tbMoOPM;
         private System.Windows.Forms.Label label6;
-        public System.Windows.Forms.TextBox textBox7;
+        public System.Windows.Forms.TextBox tbDiamOPM;
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.PictureBox pictureBox4;
-        public System.Windows.Forms.TextBox textBox2;
-        public System.Windows.Forms.TextBox textBox3;
-        public System.Windows.Forms.TextBox textBox4;
+        public System.Windows.Forms.TextBox tbdOB;
+        public System.Windows.Forms.TextBox tbhOB;
+        public System.Windows.Forms.TextBox tbRadiusSOB;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox tbvOB;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label13;
-        public System.Windows.Forms.TextBox textBox13;
+        public System.Windows.Forms.TextBox tbShirPolki;
         private System.Windows.Forms.Label label11;
-        public System.Windows.Forms.TextBox textBox12;
-        public System.Windows.Forms.TextBox textBox14;
+        public System.Windows.Forms.TextBox tbDlSchv;
+        public System.Windows.Forms.TextBox tbRadiusSkrugl;
         private System.Windows.Forms.Label label12;
-        public System.Windows.Forms.TextBox textBox11;
-        public System.Windows.Forms.TextBox textBox15;
+        public System.Windows.Forms.TextBox tbTolSchv;
+        public System.Windows.Forms.TextBox tbMO;
         private System.Windows.Forms.Label label14;
         public System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label15;
         public System.Windows.Forms.PictureBox pictureBox3;
-        public System.Windows.Forms.TextBox textBox5;
+        public System.Windows.Forms.TextBox tbDiamSO;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         public System.Windows.Forms.PictureBox pictureBox5;
-        public System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.CheckBox OtverstiyaPodLapi;
-        public System.Windows.Forms.TextBox textBox9;
-        public System.Windows.Forms.TextBox textBox10;
+        public System.Windows.Forms.TextBox tbDiamOL;
+        private System.Windows.Forms.CheckBox cbOtverstiyaPodLapi;
+        public System.Windows.Forms.TextBox tbMoOL;
+        public System.Windows.Forms.TextBox tbPolkaLapa;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox16;
     }
 }

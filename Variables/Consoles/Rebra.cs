@@ -8,7 +8,7 @@ using static Variables.Shveller;
 
 namespace Variables
 {
-    internal class RebroPodObmotki
+    internal class Rebra
     {
         public static double hRebra;
         public static double bRebraVerh;
