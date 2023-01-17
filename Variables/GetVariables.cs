@@ -14,14 +14,13 @@ namespace Variables
     public class GetVariables
     {
         public static ksPart transfer;
-        public static VariableCollection a;
+        public static VariableCollection varCol;
 
         //string path = Environment.CurrentDirectory;
         readonly string path = @"D:\PROJECTS\Kompas C#\Variables";
 
         public void variables(string detailPath)
         {
-            MainForm form1 = new MainForm();
             string progId = "KOMPAS.Application.5";
             KompasObject kompas = (KompasObject)Marshal.GetActiveObject(progId);
             _Application My7Komp = (_Application)kompas.ksGetApplication7();
@@ -37,10 +36,10 @@ namespace Variables
             transfer = kompas.TransferInterface(part7, 1, 0);
 
             //Получаем коллекцию внешних переменных
-            a = transfer.VariableCollection();
+            varCol = transfer.VariableCollection();
 
             //обновляем коллекцию внешних переменных
-            a.refresh();
+            varCol.refresh();
         }
     }
 }

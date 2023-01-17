@@ -31,13 +31,9 @@ namespace Variables.Forms
         public UC_Shveller()
         {
             InitializeComponent();
-            
-            
-        
-            
         }
 
-        public void uc()
+        public void getValuesShveller()
         {
             Shveller.tolSchv = Convert.ToDouble(tbTolSchv.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
             Shveller.dlSchv = Convert.ToDouble(tbDlSchv.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
@@ -56,6 +52,7 @@ namespace Variables.Forms
             }
             else
                 Shveller.boolOB = 0;
+                
 
 
             if (cbSmotovieOtverstiya.Checked == true)
@@ -77,7 +74,6 @@ namespace Variables.Forms
                 Shveller.boolOPM = 0;
 
 
-
             if (cbOtverstiyaPodLapi.Checked == true)
             {
                 Shveller.diamOL = Convert.ToDouble(tbDiamOL.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
@@ -91,9 +87,25 @@ namespace Variables.Forms
 
         private void rebuildShveller_Click(object sender, EventArgs e)
         {
-            uc();
+            getValuesShveller();
             Shveller shveller= new Shveller();
             shveller.editShveller();
         }
+        public static void enablePanel(Control parent)
+        {
+
+            foreach (Control c in parent.Controls)
+            {
+                if (c.GetType() == typeof(Panel))
+                    c.Enabled = true;
+                //else
+                //    c.Enabled = false;
+            }
+        }
+        private void enablePanelHandler(object sender, EventArgs e)
+        {
+            enablePanel(this);
+        }
+
     }
 }

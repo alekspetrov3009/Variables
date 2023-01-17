@@ -62,7 +62,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlOtvPolub = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -79,7 +79,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.pnlOtvPolub.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -90,44 +90,47 @@
             // 
             this.cbOtverstiyaPodMost.AutoSize = true;
             this.cbOtverstiyaPodMost.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.cbOtverstiyaPodMost.Location = new System.Drawing.Point(4, 23);
+            this.cbOtverstiyaPodMost.Location = new System.Drawing.Point(529, 302);
             this.cbOtverstiyaPodMost.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbOtverstiyaPodMost.Name = "cbOtverstiyaPodMost";
             this.cbOtverstiyaPodMost.Size = new System.Drawing.Size(166, 20);
             this.cbOtverstiyaPodMost.TabIndex = 72;
             this.cbOtverstiyaPodMost.Text = "Отверстия под мосты";
             this.cbOtverstiyaPodMost.UseVisualStyleBackColor = true;
+            this.cbOtverstiyaPodMost.CheckedChanged += new System.EventHandler(this.enablePanelHandler);
             // 
             // cbOtverstiyaPodPolubandazh
             // 
             this.cbOtverstiyaPodPolubandazh.AutoSize = true;
             this.cbOtverstiyaPodPolubandazh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.cbOtverstiyaPodPolubandazh.Location = new System.Drawing.Point(20, 23);
+            this.cbOtverstiyaPodPolubandazh.Location = new System.Drawing.Point(525, 26);
             this.cbOtverstiyaPodPolubandazh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbOtverstiyaPodPolubandazh.Name = "cbOtverstiyaPodPolubandazh";
             this.cbOtverstiyaPodPolubandazh.Size = new System.Drawing.Size(207, 20);
             this.cbOtverstiyaPodPolubandazh.TabIndex = 70;
             this.cbOtverstiyaPodPolubandazh.Text = "Отверстия под полубандаж";
             this.cbOtverstiyaPodPolubandazh.UseVisualStyleBackColor = true;
+            this.cbOtverstiyaPodPolubandazh.CheckedChanged += new System.EventHandler(this.enablePanelHandler);
             // 
             // cbSmotovieOtverstiya
             // 
             this.cbSmotovieOtverstiya.AutoSize = true;
             this.cbSmotovieOtverstiya.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.cbSmotovieOtverstiya.Location = new System.Drawing.Point(19, 22);
+            this.cbSmotovieOtverstiya.Location = new System.Drawing.Point(18, 301);
             this.cbSmotovieOtverstiya.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbSmotovieOtverstiya.Name = "cbSmotovieOtverstiya";
             this.cbSmotovieOtverstiya.Size = new System.Drawing.Size(171, 20);
             this.cbSmotovieOtverstiya.TabIndex = 71;
             this.cbSmotovieOtverstiya.Text = "Смотровые отверстия";
             this.cbSmotovieOtverstiya.UseVisualStyleBackColor = true;
+            this.cbSmotovieOtverstiya.CheckedChanged += new System.EventHandler(this.enablePanelHandler);
             // 
             // rebuildShveller
             // 
-            this.rebuildShveller.Location = new System.Drawing.Point(310, 828);
+            this.rebuildShveller.Location = new System.Drawing.Point(561, 574);
             this.rebuildShveller.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rebuildShveller.Name = "rebuildShveller";
-            this.rebuildShveller.Size = new System.Drawing.Size(193, 82);
+            this.rebuildShveller.Size = new System.Drawing.Size(212, 153);
             this.rebuildShveller.TabIndex = 69;
             this.rebuildShveller.Text = "Швеллер";
             this.rebuildShveller.UseVisualStyleBackColor = true;
@@ -356,7 +359,7 @@
             // 
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(330, 22);
+            this.pictureBox4.Location = new System.Drawing.Point(330, 45);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(120, 121);
@@ -368,7 +371,7 @@
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(314, 64);
+            this.pictureBox2.Location = new System.Drawing.Point(330, 64);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(120, 121);
@@ -381,10 +384,10 @@
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1008, 20);
+            this.pictureBox1.Location = new System.Drawing.Point(1021, 20);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(373, 383);
+            this.pictureBox1.Size = new System.Drawing.Size(332, 275);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 59;
             this.pictureBox1.TabStop = false;
@@ -416,32 +419,32 @@
             this.panel1.Controls.Add(this.tbMO);
             this.panel1.Controls.Add(this.label12);
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.panel1.Location = new System.Drawing.Point(16, 20);
+            this.panel1.Location = new System.Drawing.Point(16, 52);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(501, 243);
             this.panel1.TabIndex = 79;
             // 
-            // panel2
+            // pnlOtvPolub
             // 
-            this.panel2.AutoSize = true;
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(85)))), ((int)(((byte)(119)))));
-            this.panel2.Controls.Add(this.tbdOB);
-            this.panel2.Controls.Add(this.cbOtverstiyaPodPolubandazh);
-            this.panel2.Controls.Add(this.tbhOB);
-            this.panel2.Controls.Add(this.tbvOB);
-            this.panel2.Controls.Add(this.tbRadiusSOB);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.panel2.Location = new System.Drawing.Point(525, 20);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(467, 243);
-            this.panel2.TabIndex = 80;
+            this.pnlOtvPolub.AutoSize = true;
+            this.pnlOtvPolub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(85)))), ((int)(((byte)(119)))));
+            this.pnlOtvPolub.Controls.Add(this.tbdOB);
+            this.pnlOtvPolub.Controls.Add(this.tbhOB);
+            this.pnlOtvPolub.Controls.Add(this.tbvOB);
+            this.pnlOtvPolub.Controls.Add(this.tbRadiusSOB);
+            this.pnlOtvPolub.Controls.Add(this.label3);
+            this.pnlOtvPolub.Controls.Add(this.label1);
+            this.pnlOtvPolub.Controls.Add(this.label4);
+            this.pnlOtvPolub.Controls.Add(this.pictureBox2);
+            this.pnlOtvPolub.Controls.Add(this.label2);
+            this.pnlOtvPolub.Enabled = false;
+            this.pnlOtvPolub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
+            this.pnlOtvPolub.Location = new System.Drawing.Point(525, 52);
+            this.pnlOtvPolub.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlOtvPolub.Name = "pnlOtvPolub";
+            this.pnlOtvPolub.Size = new System.Drawing.Size(487, 243);
+            this.pnlOtvPolub.TabIndex = 80;
             // 
             // panel3
             // 
@@ -450,9 +453,9 @@
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.tbDiamSO);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.cbSmotovieOtverstiya);
+            this.panel3.Enabled = false;
             this.panel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.panel3.Location = new System.Drawing.Point(16, 271);
+            this.panel3.Location = new System.Drawing.Point(16, 327);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(501, 215);
@@ -467,19 +470,19 @@
             this.panel4.Controls.Add(this.label6);
             this.panel4.Controls.Add(this.pictureBox4);
             this.panel4.Controls.Add(this.tbDiamOPM);
-            this.panel4.Controls.Add(this.cbOtverstiyaPodMost);
+            this.panel4.Enabled = false;
             this.panel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.panel4.Location = new System.Drawing.Point(525, 271);
+            this.panel4.Location = new System.Drawing.Point(525, 328);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(467, 215);
+            this.panel4.Size = new System.Drawing.Size(487, 214);
             this.panel4.TabIndex = 82;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(367, 47);
+            this.pictureBox5.Location = new System.Drawing.Point(367, 58);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(120, 121);
@@ -500,13 +503,14 @@
             // 
             this.cbOtverstiyaPodLapi.AutoSize = true;
             this.cbOtverstiyaPodLapi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.cbOtverstiyaPodLapi.Location = new System.Drawing.Point(19, 20);
+            this.cbOtverstiyaPodLapi.Location = new System.Drawing.Point(16, 548);
             this.cbOtverstiyaPodLapi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbOtverstiyaPodLapi.Name = "cbOtverstiyaPodLapi";
             this.cbOtverstiyaPodLapi.Size = new System.Drawing.Size(159, 20);
             this.cbOtverstiyaPodLapi.TabIndex = 73;
             this.cbOtverstiyaPodLapi.Text = "Отверстия под лапы";
             this.cbOtverstiyaPodLapi.UseVisualStyleBackColor = true;
+            this.cbOtverstiyaPodLapi.CheckedChanged += new System.EventHandler(this.enablePanelHandler);
             // 
             // tbMoOL
             // 
@@ -562,11 +566,11 @@
             this.panel5.Controls.Add(this.label9);
             this.panel5.Controls.Add(this.tbPolkaLapa);
             this.panel5.Controls.Add(this.tbMoOL);
-            this.panel5.Controls.Add(this.cbOtverstiyaPodLapi);
             this.panel5.Controls.Add(this.tbDiamOL);
             this.panel5.Controls.Add(this.pictureBox5);
+            this.panel5.Enabled = false;
             this.panel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(190)))), ((int)(((byte)(143)))));
-            this.panel5.Location = new System.Drawing.Point(16, 494);
+            this.panel5.Location = new System.Drawing.Point(16, 574);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(501, 238);
@@ -578,11 +582,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(67)))), ((int)(((byte)(97)))));
-            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.cbOtverstiyaPodMost);
             this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.cbOtverstiyaPodPolubandazh);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.cbSmotovieOtverstiya);
+            this.Controls.Add(this.pnlOtvPolub);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.cbOtverstiyaPodLapi);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.rebuildShveller);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -594,8 +602,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.pnlOtvPolub.ResumeLayout(false);
+            this.pnlOtvPolub.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -642,7 +650,7 @@
         public System.Windows.Forms.TextBox tbDiamSO;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlOtvPolub;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         public System.Windows.Forms.PictureBox pictureBox5;

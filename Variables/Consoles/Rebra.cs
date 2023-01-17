@@ -4,28 +4,46 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Variables.Forms;
 using static Variables.Shveller;
 
 namespace Variables
 {
     internal class Rebra
     {
-        public static double hRebra;
-        public static double bRebraVerh;
-        public static double bRebraNiz;
-        public static double hFaski;
-        public static double bFaski;
-        public static double sRebra;
+        public double hRebra;
+        public double bRebraVerh;
+        public double bRebraNiz;
+        public double hFaski;
+        public double bFaski;
+        public double sRebra;
 
-        public void editRebroPodObmotki(ksPart transfer, VariableCollection a)
+        public ksPart transfer;
+        public VariableCollection varCol;
+
+        public void getVar(string path)
         {
-            ksVariable visotaRebra = a.GetByName("visotaRebra", true, true);
-            ksVariable shirinaRebraVerh = a.GetByName("shirinaRebraVerh", true, true);
-            ksVariable shirinaRebraNiz = a.GetByName("shirinaRebraNiz", true, true);
-            ksVariable shirinaFaski = a.GetByName("shirinaFaski", true, true);
-            ksVariable visotaFaski = a.GetByName("visotaFaski", true, true);
-            ksVariable tolschinaRebra = a.GetByName("tolschinaRebra", true, true);
+            GetVariables getVariables = new GetVariables();
+            getVariables.variables(path);
+            transfer = GetVariables.transfer;
+            varCol = GetVariables.varCol;
+        }
 
+        public void rebuild()
+        {
+            transfer.RebuildModel();
+        }
+
+        public void editRebroPodObmotki()
+        {
+            getVar(@"\Швеллер\Ребро 2.m3d");
+
+            ksVariable visotaRebra = varCol.GetByName("visotaRebra", true, true);
+            ksVariable shirinaRebraVerh = varCol.GetByName("shirinaRebraVerh", true, true);
+            ksVariable shirinaRebraNiz = varCol.GetByName("shirinaRebraNiz", true, true);
+            ksVariable shirinaFaski = varCol.GetByName("shirinaFaski", true, true);
+            ksVariable visotaFaski = varCol.GetByName("visotaFaski", true, true);
+            ksVariable tolschinaRebra = varCol.GetByName("tolschinaRebra", true, true);
 
             visotaRebra.value = hRebra;                                 /* Высота ребра */
             shirinaRebraVerh.value = bRebraVerh;                        /* Ширина ребра верхняя */
@@ -35,7 +53,7 @@ namespace Variables
             tolschinaRebra.value = sRebra;                              /* Толщина ребра */
 
 
-            transfer.RebuildModel();
+            rebuild();
         }
     }
 }

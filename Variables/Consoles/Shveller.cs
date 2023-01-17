@@ -34,41 +34,48 @@ namespace Variables
         public static int boolSO;
         public static int boolOPM;
         public static int boolOl;
-        public static ksPart transfer;
-        public static VariableCollection a;
 
-        public void getVar()
+        public static ksPart transfer;
+        public static VariableCollection varCol;
+
+        public void getVar(string path)
         {
             GetVariables getVariables = new GetVariables();
-            getVariables.variables(@"\Швеллер\Швеллер.m3d");
-            return ; 
+            getVariables.variables(path);
+            transfer = GetVariables.transfer;
+            varCol = GetVariables.varCol;
+        }
 
+        public void rebuild()
+        {
+            transfer.RebuildModel();
         }
 
         public void editShveller()
         {
-            
-            ksVariable tolschinaShvellera = a.GetByName("SM_Thickness", true, true);
-            ksVariable dlinaShvellera = a.GetByName("Dlina_shvellera", true, true);
-            ksVariable shirinaVerhPolki = a.GetByName("shirinaVerhPolki", true, true);
-            ksVariable shirinaNizhPolki = a.GetByName("shirinaNizhPolki", true, true);
-            ksVariable radiusVerhPolki = a.GetByName("Radius_Verh_Polki", true, true);
-            ksVariable radiusNizhPolki = a.GetByName("Radius_Nizh_Polki", true, true);
-            ksVariable MO = a.GetByName("MO", true, true);
-            ksVariable visotaOknaBandazha = a.GetByName("visotaOknaBandazha", true, true);
-            ksVariable dlinaOknaBandazha = a.GetByName("dlinaOknaBandazha", true, true);
-            ksVariable glubinaOknaBandazha = a.GetByName("glubinaOknaBandazha", true, true);
-            ksVariable radiusSkrugleniyaOkonBandazha = a.GetByName("radiusSkrugleniyaOkonBandazha", true, true);
-            ksVariable diamSmotrOtv = a.GetByName("diamSmotrOtv", true, true);
-            ksVariable moOtvPodMost = a.GetByName("moOtvPodMost", true, true);
-            ksVariable diamOtvPodMost = a.GetByName("diamOtvPodMost", true, true);
-            ksVariable diamOtvLapa = a.GetByName("diamOtvLapa", true, true);
-            ksVariable moOtvLapa = a.GetByName("moOtvLapa", true, true);
-            ksVariable rasstPolkaLapa = a.GetByName("rasstPolkaLapa", true, true);
-            ksVariable boolOknaBandazha = a.GetByName("boolOknaBandazha", true, true);
-            ksVariable boolSmotrOtv = a.GetByName("boolSmotrOtv", true, true);
-            ksVariable boolOtvPodMost = a.GetByName("boolOtvPodMost", true, true);
-            ksVariable boolOtvLapa = a.GetByName("boolOtvLapa", true, true);
+            getVar(@"\Швеллер\Швеллер.m3d");
+
+            ksVariable tolschinaShvellera = varCol.GetByName("SM_Thickness", true, true);
+            ksVariable dlinaShvellera = varCol.GetByName("Dlina_shvellera", true, true);
+            ksVariable shirinaVerhPolki = varCol.GetByName("shirinaVerhPolki", true, true);
+            ksVariable shirinaNizhPolki = varCol.GetByName("shirinaNizhPolki", true, true);
+            ksVariable radiusVerhPolki = varCol.GetByName("Radius_Verh_Polki", true, true);
+            ksVariable radiusNizhPolki = varCol.GetByName("Radius_Nizh_Polki", true, true);
+            ksVariable MO = varCol.GetByName("MO", true, true);
+            ksVariable visotaOknaBandazha = varCol.GetByName("visotaOknaBandazha", true, true);
+            ksVariable dlinaOknaBandazha = varCol.GetByName("dlinaOknaBandazha", true, true);
+            ksVariable glubinaOknaBandazha = varCol.GetByName("glubinaOknaBandazha", true, true);
+            ksVariable radiusSkrugleniyaOkonBandazha = varCol.GetByName("radiusSkrugleniyaOkonBandazha", true, true);
+            ksVariable diamSmotrOtv = varCol.GetByName("diamSmotrOtv", true, true);
+            ksVariable moOtvPodMost = varCol.GetByName("moOtvPodMost", true, true);
+            ksVariable diamOtvPodMost = varCol.GetByName("diamOtvPodMost", true, true);
+            ksVariable diamOtvLapa = varCol.GetByName("diamOtvLapa", true, true);
+            ksVariable moOtvLapa = varCol.GetByName("moOtvLapa", true, true);
+            ksVariable rasstPolkaLapa = varCol.GetByName("rasstPolkaLapa", true, true);
+            ksVariable boolOknaBandazha = varCol.GetByName("boolOknaBandazha", true, true);
+            ksVariable boolSmotrOtv = varCol.GetByName("boolSmotrOtv", true, true);
+            ksVariable boolOtvPodMost = varCol.GetByName("boolOtvPodMost", true, true);
+            ksVariable boolOtvLapa = varCol.GetByName("boolOtvLapa", true, true);
 
 
 
@@ -99,9 +106,7 @@ namespace Variables
             boolOtvPodMost.value = boolOPM;                         /* Наличие отверстий под мосты */
             boolOtvLapa.value = boolOl;                             /* Наличие отверстий под лапы */
 
-
-            transfer.RebuildModel();
-
+            rebuild();
         }
     }
 }
