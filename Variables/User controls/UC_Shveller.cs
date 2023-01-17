@@ -35,54 +35,55 @@ namespace Variables.Forms
 
         public void getValuesShveller()
         {
-            Shveller.tolSchv = Convert.ToDouble(tbTolSchv.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-            Shveller.dlSchv = Convert.ToDouble(tbDlSchv.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-            Shveller.shirPolki = Convert.ToDouble(tbShirPolki.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-            Shveller.radiusSkrugl = Convert.ToDouble(tbRadiusSkrugl.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-            Shveller.mezhOsev = Convert.ToDouble(tbMO.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            Shveller shveller  = new Shveller();
+            shveller.tolSchv = Convert.ToDouble(tbTolSchv.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            shveller.dlSchv = Convert.ToDouble(tbDlSchv.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            shveller.shirPolki = Convert.ToDouble(tbShirPolki.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            shveller.radiusSkrugl = Convert.ToDouble(tbRadiusSkrugl.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            shveller.mezhOsev = Convert.ToDouble(tbMO.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
 
 
-            if (cbOtverstiyaPodPolubandazh.Checked == true)
-            {
-                Shveller.vOB = Convert.ToDouble(tbvOB.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-                Shveller.dOB = Convert.ToDouble(tbdOB.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-                Shveller.hOB = Convert.ToDouble(tbhOB.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-                Shveller.radiusSOB = Convert.ToDouble(tbRadiusSOB.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-                Shveller.boolOB = 1;
-            }
-            else
-                Shveller.boolOB = 0;
+            //if (cbOtverstiyaPodPolubandazh.Checked == true)
+            //{
+            //    Shveller.vOB = Convert.ToDouble(tbvOB.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            //    Shveller.dOB = Convert.ToDouble(tbdOB.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            //    Shveller.hOB = Convert.ToDouble(tbhOB.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            //    Shveller.radiusSOB = Convert.ToDouble(tbRadiusSOB.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            //    Shveller.boolOB = 1;
+            //}
+            //else
+            //    Shveller.boolOB = 0;
                 
 
 
-            if (cbSmotovieOtverstiya.Checked == true)
-            {
-                Shveller.diamSO = Convert.ToDouble(tbDiamSO.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-                Shveller.boolSO = 1;
-            }
-            else
-                Shveller.boolSO = 0;
+            //if (cbSmotovieOtverstiya.Checked == true)
+            //{
+            //    Shveller.diamSO = Convert.ToDouble(tbDiamSO.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            //    Shveller.boolSO = 1;
+            //}
+            //else
+            //    Shveller.boolSO = 0;
 
 
-            if (cbOtverstiyaPodMost.Checked == true)
-            {
-                Shveller.moOPM = Convert.ToDouble(tbMoOPM.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-                Shveller.diamOPM = Convert.ToDouble(tbDiamOPM.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-                Shveller.boolOPM = 1;
-            }
-            else
-                Shveller.boolOPM = 0;
+            //if (cbOtverstiyaPodMost.Checked == true)
+            //{
+            //    Shveller.moOPM = Convert.ToDouble(tbMoOPM.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            //    Shveller.diamOPM = Convert.ToDouble(tbDiamOPM.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            //    Shveller.boolOPM = 1;
+            //}
+            //else
+            //    Shveller.boolOPM = 0;
 
 
-            if (cbOtverstiyaPodLapi.Checked == true)
-            {
-                Shveller.diamOL = Convert.ToDouble(tbDiamOL.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-                Shveller.moOL = Convert.ToDouble(tbMoOL.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-                Shveller.polkaLapa = Convert.ToDouble(tbPolkaLapa.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
-                Shveller.boolOl = 1;
-            }
-            else
-                Shveller.boolOl = 0;
+            //if (cbOtverstiyaPodLapi.Checked == true)
+            //{
+            //    Shveller.diamOL = Convert.ToDouble(tbDiamOL.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            //    Shveller.moOL = Convert.ToDouble(tbMoOL.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            //    Shveller.polkaLapa = Convert.ToDouble(tbPolkaLapa.Text.Replace(",", CultureInfo.InvariantCulture.NumberFormat.NumberDecimalSeparator), CultureInfo.InvariantCulture);
+            //    Shveller.boolOl = 1;
+            //}
+            //else
+            //    Shveller.boolOl = 0;
         }
 
         private void rebuildShveller_Click(object sender, EventArgs e)

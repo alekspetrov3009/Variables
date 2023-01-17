@@ -16,27 +16,27 @@ namespace Variables
         public static double mezhOsev;
 
 
-        public static double vOB;
-        public static double dOB;
-        public static double hOB;
-        public static double radiusSOB;
+        public double vOB;
+        public double dOB;
+        public double hOB;
+        public double radiusSOB;
 
-        public static double diamSO;
+        public double diamSO;
 
-        public static double moOPM;
-        public static double diamOPM;
+        public double moOPM;
+        public double diamOPM;
 
-        public static double diamOL;
-        public static double moOL;
-        public static double polkaLapa;
+        public double diamOL;
+        public double moOL;
+        public double polkaLapa;
 
-        public static int boolOB;
-        public static int boolSO;
-        public static int boolOPM;
-        public static int boolOl;
+        public int boolOB;
+        public int boolSO;
+        public int boolOPM;
+        public int boolOl;
 
-        public static ksPart transfer;
-        public static VariableCollection varCol;
+        public ksPart transfer;
+        public VariableCollection varCol;
 
         public void getVar(string path)
         {

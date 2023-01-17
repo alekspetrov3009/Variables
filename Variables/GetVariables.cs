@@ -17,7 +17,8 @@ namespace Variables
         public static VariableCollection varCol;
 
         //string path = Environment.CurrentDirectory;
-        readonly string path = @"D:\PROJECTS\Kompas C#\Variables";
+        readonly string path = @"E:\GIT\Variables\";
+        
 
         public void variables(string detailPath)
         {
