@@ -103,53 +103,59 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BalkaYarmNizh.cs" />
-    <Compile Include="Forms\ConsolesForm.cs">
+    <Compile Include="Consoles\BalkaNizhNN.cs" />
+    <Compile Include="Consoles\BalkaNizhVN.cs" />
+    <Compile Include="Consoles\BalkaVerhNN.cs" />
+    <Compile Include="Consoles\BalkaVerhVN.cs" />
+    <Compile Include="Consoles\PlastinaPodObmotki.cs" />
+    <Compile Include="Consoles\ZamkovayaPlastina.cs" />
+    <Compile Include="GetVariables.cs" />
+    <Compile Include="User Controls\ConsolesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ConsolesForm.Designer.cs">
+    <Compile Include="User Controls\ConsolesForm.Designer.cs">
       <DependentUpon>ConsolesForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form2.cs">
+    <Compile Include="User Controls\Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form2.Designer.cs">
+    <Compile Include="User Controls\Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UC_BalkaYarmNizh.cs">
+    <Compile Include="User Controls\UC_BalkaYarmNizh.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\UC_BalkaYarmNizh.Designer.cs">
+    <Compile Include="User Controls\UC_BalkaYarmNizh.Designer.cs">
       <DependentUpon>UC_BalkaYarmNizh.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UC_Rebra.cs">
+    <Compile Include="User Controls\UC_Rebra.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\UC_Rebra.Designer.cs">
+    <Compile Include="User Controls\UC_Rebra.Designer.cs">
       <DependentUpon>UC_Rebra.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UC_Shveller.cs">
+    <Compile Include="User Controls\UC_Shveller.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\UC_Shveller.Designer.cs">
+    <Compile Include="User Controls\UC_Shveller.Designer.cs">
       <DependentUpon>UC_Shveller.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UC_Consoles.cs">
+    <Compile Include="User Controls\UC_Consoles.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\UC_Consoles.Designer.cs">
+    <Compile Include="User Controls\UC_Consoles.Designer.cs">
       <DependentUpon>UC_Consoles.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UC_ConsoleTypesVN.cs">
+    <Compile Include="User Controls\UC_ConsoleTypesVN.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\UC_ConsoleTypesVN.Designer.cs">
+    <Compile Include="User Controls\UC_ConsoleTypesVN.Designer.cs">
       <DependentUpon>UC_ConsoleTypesVN.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UC_InputData.cs">
+    <Compile Include="User Controls\UC_InputData.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\UC_InputData.Designer.cs">
+    <Compile Include="User Controls\UC_InputData.Designer.cs">
       <DependentUpon>UC_InputData.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
@@ -157,54 +163,49 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Shveller.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Consoles\Shveller.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kosinka.cs" />
+    <Compile Include="Consoles\Kosinka.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RebroPodObmotki.cs" />
-    <Compile Include="Upor.cs" />
-    <EmbeddedResource Include="Forms\ConsolesForm.resx">
+    <Compile Include="Consoles\Rebra.cs" />
+    <Compile Include="Consoles\Upor.cs" />
+    <EmbeddedResource Include="User Controls\ConsolesForm.resx">
       <DependentUpon>ConsolesForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UC_BalkaYarmNizh.resx">
+    <EmbeddedResource Include="User Controls\UC_BalkaYarmNizh.resx">
       <DependentUpon>UC_BalkaYarmNizh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UC_Rebra.resx">
+    <EmbeddedResource Include="User Controls\UC_Rebra.resx">
       <DependentUpon>UC_Rebra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UC_Shveller.resx">
+    <EmbeddedResource Include="User Controls\UC_Shveller.resx">
       <DependentUpon>UC_Shveller.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UC_Consoles.resx">
+    <EmbeddedResource Include="User Controls\UC_Consoles.resx">
       <DependentUpon>UC_Consoles.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UC_ConsoleTypesVN.resx">
+    <EmbeddedResource Include="User Controls\UC_ConsoleTypesVN.resx">
       <DependentUpon>UC_ConsoleTypesVN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UC_InputData.resx">
+    <EmbeddedResource Include="User Controls\UC_InputData.resx">
       <DependentUpon>UC_InputData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form2.resx">
+    <EmbeddedResource Include="User Controls\Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Shveller.resx">
-      <DependentUpon>Shveller.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -227,7 +228,6 @@
     <None Include="pictures\Logo_2.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MetroFramework.txt" />
     <None Include="pictures\exit_icon.png" />
     <None Include="pictures\maximize_icon.png" />
     <None Include="pictures\minimize_icon.png" />

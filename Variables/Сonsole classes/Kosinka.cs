@@ -4,11 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Variables.Shveller;
 
 namespace Variables
 {
-    internal class RebroPodObmotki
+    internal class Kosinka
     {
         public static double hRebra;
         public static double bRebraVerh;
@@ -17,7 +16,7 @@ namespace Variables
         public static double bFaski;
         public static double sRebra;
 
-        public void editRebroPodObmotki(ksPart transfer, VariableCollection a)
+        public void editKosinka(ksPart transfer, VariableCollection a)
         {
             ksVariable visotaRebra = a.GetByName("visotaRebra", true, true);
             ksVariable shirinaRebraVerh = a.GetByName("shirinaRebraVerh", true, true);

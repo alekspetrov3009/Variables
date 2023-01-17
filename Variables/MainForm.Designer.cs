@@ -250,7 +250,7 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(952, 549);
+            this.tabControl1.Size = new System.Drawing.Size(1205, 920);
             this.tabControl1.TabIndex = 4;
             this.tabControl1.Visible = false;
             // 
@@ -273,7 +273,7 @@
             this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tabPage2.Size = new System.Drawing.Size(920, 541);
+            this.tabPage2.Size = new System.Drawing.Size(1173, 912);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Ребра";
             this.tabPage2.UseVisualStyleBackColor = true;

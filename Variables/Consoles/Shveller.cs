@@ -1,15 +1,13 @@
 ﻿using Kompas6API5;
-using KompasAPI7;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Variables
 {
-    public class Shveller : Form
+    public class Shveller
     {
         public static double tolSchv;
         public static double dlSchv;
@@ -36,11 +34,20 @@ namespace Variables
         public static int boolSO;
         public static int boolOPM;
         public static int boolOl;
+        public static ksPart transfer;
+        public static VariableCollection a;
 
-
-        //Form1 Form1 = new Form1();
-        public void editShveller(ksPart transfer, VariableCollection a)
+        public void getVar()
         {
+            GetVariables getVariables = new GetVariables();
+            getVariables.variables(@"\Швеллер\Швеллер.m3d");
+            return ; 
+
+        }
+
+        public void editShveller()
+        {
+            
             ksVariable tolschinaShvellera = a.GetByName("SM_Thickness", true, true);
             ksVariable dlinaShvellera = a.GetByName("Dlina_shvellera", true, true);
             ksVariable shirinaVerhPolki = a.GetByName("shirinaVerhPolki", true, true);
